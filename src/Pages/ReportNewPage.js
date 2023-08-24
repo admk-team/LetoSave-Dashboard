@@ -25,10 +25,12 @@ import report from "../Components/Assets/Icons/report.png"
 import logout from "../Components/Assets/Icons/logout.png"
 import Reports from './Reports';
 import { Link } from 'react-router-dom';
+import LogoutModal from '../Components/LogoutModal';
 
 
 const drawerWidth = 280;
 const ReportNewPage = () => {
+    const [showLogoutModal, setShowLogoutModal] = useState(false);
     const [open, setOpen] = useState(window.innerWidth >= 960);
     useEffect(() => {
         const handleResize = () => {
@@ -43,7 +45,21 @@ const ReportNewPage = () => {
     const handleDrawerToggle = () => {
         setOpen(!open);
     };
+    const handleLogoutClick = () => {
+        setShowLogoutModal(true);
+    };
 
+    const handleLogoutClose = () => {
+        setShowLogoutModal(false);
+    };
+
+    const handleLogoutConfirm = () => {
+        // Perform actual logout action here
+        // For example: Redirect to logout page or clear session
+
+        // Close the modal after logout
+        setShowLogoutModal(false);
+    };
     return (
         <>
 
@@ -151,12 +167,12 @@ const ReportNewPage = () => {
                             <ListItemText primary='Reports' />
                             </Link>
                         </ListItem>
-                        <ListItem>
-                            <img src={logout} className='me-3' alt=''></img>
-                            <Link className="nav-link" to="/Reports-Management">
-                            <ListItemText primary='Logout' />
-                            </Link>
-                        </ListItem>
+                        <ListItem className='cursor-pointer'>
+                        <img src={logout} className='me-3' alt=''></img>
+                        
+                            <ListItemText primary='Logout'  onClick={handleLogoutClick} />
+                       
+                    </ListItem>
                         {/* ))} */}
 
                     </List>
@@ -167,6 +183,7 @@ const ReportNewPage = () => {
                 <main style={{ flexGrow: 1, marginLeft: open ? drawerWidth : 0, backgroundColor: 'wheate' }}>
 
                     <Reports/>
+                    <LogoutModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm}/>
                 </main>
             </div>
         </>

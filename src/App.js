@@ -18,6 +18,10 @@ import RevenueReportNewPage from './Pages/RevenueReportNewPage';
 import ProfileNewPage from './Pages/ProfileNewPage';
 import AddBankAccountNewPage from './Pages/AddBankAccountNewPage';
 import SupportAndChatNewPage from './Pages/SupportAndChatNewPage';
+import WellComeBackPage from './Pages/WellComeBackPage';
+import ForgotPasswordPage from './Pages/ForgotPasswordPage';
+import RegistrationPage from './Pages/RegistrationPage';
+import CreatingPasswordPage from './Pages/CreatingPasswordPage';
 //import RegistrationPage from './Pages/RegistrationPage';
 //import OTP from './Components/Dashboardhome/OTP';
 //import Button from 'react-bootstrap/Button';
@@ -56,7 +60,7 @@ function App() {
           <Route path="/patient-Management" element={<PataintMana />} />
           <Route path="/Deposite-Management" element={<DepossiiitPage />} />
           <Route path="/service-Management" element={<SerVicessssPage />} />
-          <Route path="/Support/Chart-Management" element={<SupportAndChatNewPage/>} />
+          <Route path="/Support/Chart-Management" element={<SupportAndChatNewPage />} />
           <Route path="/Reports-Management" element={<ReportNewPage />} />
           <Route path="/AddServicemanagement" element={<AddNew />} />
           <Route path="/Patient-report" element={<PatientNew />} />
@@ -64,8 +68,15 @@ function App() {
           <Route path="/Transaction-report" element={<TransactionReportNewPage />} />
           <Route path="/Revenue-report" element={<RevenueReportNewPage />} />
           <Route path="/Profile" element={<ProfileNewPage />} />
-          <Route path="/Add-Bank-Account" element={<AddBankAccountNewPage/>} />
+          <Route path="/Add-Bank-Account" element={<AddBankAccountNewPage />} />
+          <Route path="/Welcome-back" element={<WellComeBackPage />} />
+          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+          <Route path="/Registration-page" element={<RegistrationPage />} />
+          <Route path="/Reset-Password" element={<CreatingPasswordPage />} />
 
+
+          
+         
         </Routes>
       </BrowserRouter>
     </>

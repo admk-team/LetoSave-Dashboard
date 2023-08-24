@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Imag from "../Pages/logo.png";
+import Imag from "../Components/Images/logo.png";
 import Button from 'react-bootstrap/Button';
 
 const CreatingPasswordPage = () => {

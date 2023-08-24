@@ -36,6 +36,7 @@ import Reports from './Reports';
 import { Link } from 'react-router-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PatientReportComponent from '../Components/PatientReportComponent';
+import LogoutModal from '../Components/LogoutModal';
 
 
 
@@ -47,6 +48,7 @@ const drawerWidth = 280;
 
 
 const PatientNew = () => {
+    const [showLogoutModal, setShowLogoutModal] = useState(false);
     const [open, setOpen] = useState(window.innerWidth >= 960);
     useEffect(() => {
         const handleResize = () => {
@@ -60,6 +62,21 @@ const PatientNew = () => {
     }, []);
     const handleDrawerToggle = () => {
         setOpen(!open);
+    };
+    const handleLogoutClick = () => {
+        setShowLogoutModal(true);
+    };
+
+    const handleLogoutClose = () => {
+        setShowLogoutModal(false);
+    };
+
+    const handleLogoutConfirm = () => {
+        // Perform actual logout action here
+        // For example: Redirect to logout page or clear session
+
+        // Close the modal after logout
+        setShowLogoutModal(false);
     };
 
     return (
@@ -166,12 +183,12 @@ const PatientNew = () => {
                             <ListItemText primary='Reports' />
                             </Link>
                         </ListItem>
-                        <ListItem>
-                            <img src={logout} className='me-3' alt=''></img>
-                            <Link className="nav-link" to="/Reports-Management">
-                            <ListItemText primary='Logout' />
-                            </Link>
-                        </ListItem>
+                        <ListItem className='cursor-pointer'>
+                        <img src={logout} className='me-3' alt=''></img>
+                        
+                            <ListItemText primary='Logout'  onClick={handleLogoutClick} />
+                       
+                    </ListItem>
                         {/* ))} */}
 
                     </List>
@@ -191,6 +208,7 @@ const PatientNew = () => {
                 {/* <NotificationCenter/> */}
                 {/* <Reports/> */}
                 <PatientReportComponent/>
+                <LogoutModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm}/>
             </main>
         </div>
     );

@@ -34,7 +34,7 @@ const PatientManagementPage = () => {
                         </Row>
                     </Form>
                 </div>
-                <div className='mt-4'>
+                <div className='mt-4 table-responsive'>
                     <table class="table table-hover">
                         <thead>
                             <tr>

@@ -1,9 +1,10 @@
 import React from 'react'
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Imag from "../Pages/logo.png";
+import Imag from "../Components/Images/logo.png";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { Link } from 'react-router-dom';
 
 
 const WellComeBackPage = () => {
@@ -48,7 +49,7 @@ const WellComeBackPage = () => {
                                                     <Form.Check type="checkbox" label="Remember login" />
                                                 </Form.Group>
 
-                                                <a href='!#' className='text-decoration-none'>Forgot password?</a>
+                                                <Link to='/forgot-password' className='text-decoration-none'>Forgot password?</Link>
 
                                             </div>
                                             <div className="d-grid gap-2 mt-4">
@@ -59,7 +60,7 @@ const WellComeBackPage = () => {
 
 
                                             <div className="d-flex justify-content-center mt-5">
-                                                <p>Don't have an account? <a href='!#' className='text-decoration-none'>Sign Up</a></p>
+                                                <p>Don't have an account? <Link to='/Registration-page' className='text-decoration-none'>Sign Up</Link></p>
                                             </div>
                                         </div>
                                     </div>
@@ -69,7 +70,7 @@ const WellComeBackPage = () => {
                     </div>
                 </div>
 
-            </Container >
+            </Container>
         </>
     )
 }
