@@ -4,7 +4,7 @@
 
 // export default ReportNewPage
 import React from 'react'
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Drawer from '@mui/material/Drawer';
 import AppBar from '@mui/material/AppBar';
@@ -42,12 +42,20 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const drawerWidth = 280;
 const AddNew = () => {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(window.innerWidth >= 960);
+    useEffect(() => {
+        const handleResize = () => {
+            setOpen(window.innerWidth >= 960);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.addEventListener('resize', handleResize);
+        };
 
+    }, []);
     const handleDrawerToggle = () => {
         setOpen(!open);
     };
-
     return (
         <>
 
@@ -76,12 +84,14 @@ const AddNew = () => {
                             <Badge color="secondary" badgeContent={0}>
                                 <MailIcon sx={{ fontSize: 23, color: '#FF7070' }} style={{ marginTop: "10px" }} />
                             </Badge>
-                            <Badge color="secondary" showZero>
-                                <NotificationsRoundedIcon sx={{ fontSize: 25, }} className='mt-2' />
-                            </Badge>
+                            <Link to="/Notification" >
+                                <Badge color="secondary" showZero>
+                                    <NotificationsRoundedIcon sx={{ fontSize: 25, }} className='mt-2' />
+                                </Badge>
+                            </Link>
                             <Badge color="secondary" showZero>
                                 <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                                <a href="!#" className='ms-3' style={{ textDecoration: "none", color: "black" }}>Flexi Health<p className='Adin'>Admin</p></a>
+                                <Link to="/Profile" className='ms-3' style={{ textDecoration: "none", color: "black" }}>Flexi Health<p className='Adin'>Admin</p></Link>
                             </Badge>
 
                         </Stack>

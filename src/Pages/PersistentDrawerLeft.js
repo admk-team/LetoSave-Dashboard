@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Drawer from '@mui/material/Drawer';
 import AppBar from '@mui/material/AppBar';
@@ -24,15 +24,9 @@ import Layer from "../Components/Assets/Icons/Layer_x0020_1.png"
 import report from "../Components/Assets/Icons/report.png"
 import logout from "../Components/Assets/Icons/logout.png"
 import Table from "../Components/Dashboardhome/Table"
-import PatientManagementPage from './PatientManagementPage';
-import PateintDetail from '../Components/PatientManagementComponents/PateintDetail';
-import DepositManagment from './DepositManagment';
-import ServiceManagmentPage from './ServiceManagmentPage';
-import ServiceManagmentAdd from '../Components/ServiceManagmentAdd';
-import NotificationCenter from './NotificationCenter';
-import Reports from './Reports';
+
 import { Link } from 'react-router-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 
 
@@ -44,8 +38,17 @@ const drawerWidth = 280;
 
 
 const PersistentDrawerLeft = () => {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(window.innerWidth >= 960);
+    useEffect(() => {
+        const handleResize = () => {
+            setOpen(window.innerWidth >= 960);
+        };
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.addEventListener('resize', handleResize);
+        };
 
+    }, []);
     const handleDrawerToggle = () => {
         setOpen(!open);
     };
@@ -75,12 +78,14 @@ const PersistentDrawerLeft = () => {
                         <Badge color="secondary" badgeContent={0}>
                             <MailIcon sx={{ fontSize: 23, color: '#FF7070' }} style={{ marginTop: "10px" }} />
                         </Badge>
-                        <Badge color="secondary" showZero>
-                            <NotificationsRoundedIcon sx={{ fontSize: 25, }} className='mt-2' />
-                        </Badge>
+                        <Link to="/Notification" className='text-decoration-none'>
+                            <Badge color="secondary" showZero>
+                                <NotificationsRoundedIcon sx={{ fontSize: 25, }} className='mt-2' />
+                            </Badge>
+                            </Link>
                         <Badge color="secondary" showZero>
                             <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                            <a href="!#" className='ms-3' style={{ textDecoration: "none", color: "black" }}>Flexi Health<p className='Adin'>Admin</p></a>
+                            <Link to="/Profile" className='ms-3' style={{ textDecoration: "none", color: "black" }}>Flexi Health<p className='Adin'>Admin</p></Link>
                         </Badge>
 
                     </Stack>
@@ -114,53 +119,53 @@ const PersistentDrawerLeft = () => {
                 </div>
                 <Divider />
                 <List >
-                        {/* {['Dashboard', 'Patient Management', 'Deposits Management', 'Service Management', 'Support / Chart', 'Reports', 'Logout'].map((text, index) => ( */}
-                        <ListItem>
-                            <img src={iconnoone} className='me-3' alt=''></img>
-                            <Link className="nav-link" to="/">
-                                <ListItemText primary='Dashboard' />
-                            </Link>
-                        </ListItem>
-                        <ListItem>
-                            <img src={Patient} className='me-3' alt=''></img>
-                            <Link className="nav-link" to="/patient-Management">
-                                <ListItemText primary='Patient Management' />
-                            </Link>
-                        </ListItem>
+                    {/* {['Dashboard', 'Patient Management', 'Deposits Management', 'Service Management', 'Support / Chart', 'Reports', 'Logout'].map((text, index) => ( */}
+                    <ListItem>
+                        <img src={iconnoone} className='me-3' alt=''></img>
+                        <Link className="nav-link" to="/">
+                            <ListItemText primary='Dashboard' />
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <img src={Patient} className='me-3' alt=''></img>
+                        <Link className="nav-link" to="/patient-Management">
+                            <ListItemText primary='Patient Management' />
+                        </Link>
+                    </ListItem>
 
-                        <ListItem>
-                            <img src={Ellips} className='me-3' alt=''></img>
-                            <Link className="nav-link" to="/Deposite-Management">
-                                <ListItemText primary='Deposits Management' />
-                            </Link>
-                        </ListItem>
-                        <ListItem>
-                            <img src={Customer} className='me-3' alt=''></img>
-                            <Link className="nav-link" to="/service-Management">
+                    <ListItem>
+                        <img src={Ellips} className='me-3' alt=''></img>
+                        <Link className="nav-link" to="/Deposite-Management">
+                            <ListItemText primary='Deposits Management' />
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <img src={Customer} className='me-3' alt=''></img>
+                        <Link className="nav-link" to="/service-Management">
                             <ListItemText primary='Service Management' />
-                            </Link>
-                        </ListItem>
-                        <ListItem>
-                            <img src={Layer} className='me-3' alt=''></img>
-                            <Link className="nav-link" to="/Support/Chart-Management">
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <img src={Layer} className='me-3' alt=''></img>
+                        <Link className="nav-link" to="/Support/Chart-Management">
                             <ListItemText primary='Support / Chart' />
-                            </Link>
-                        </ListItem>
-                        <ListItem>
-                            <img src={report} className='me-3' alt=''></img>
-                            <Link className="nav-link" to="/Reports-Management">
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <img src={report} className='me-3' alt=''></img>
+                        <Link className="nav-link" to="/Reports-Management">
                             <ListItemText primary='Reports' />
-                            </Link>
-                        </ListItem>
-                        <ListItem>
-                            <img src={logout} className='me-3' alt=''></img>
-                            <Link className="nav-link" to="/Reports-Management">
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <img src={logout} className='me-3' alt=''></img>
+                        <Link className="nav-link" to="/Reports-Management">
                             <ListItemText primary='Logout' />
-                            </Link>
-                        </ListItem>
-                        {/* ))} */}
+                        </Link>
+                    </ListItem>
+                    {/* ))} */}
 
-                    </List>
+                </List>
 
 
             </Drawer>
@@ -169,13 +174,7 @@ const PersistentDrawerLeft = () => {
 
                 <Boxes />
                 <Table />
-                {/* <PatientManagementPage/> */}
-                {/* <PateintDetail/> */}
-                {/* <DepositManagment/> */}
-                {/* <ServiceManagmentPage/> */}
-                {/* <ServiceManagmentAdd/> */}
-                {/* <NotificationCenter/> */}
-                {/* <Reports/> */}
+              
             </main>
         </div>
     );

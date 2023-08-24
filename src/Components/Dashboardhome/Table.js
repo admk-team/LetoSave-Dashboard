@@ -25,13 +25,13 @@ const Table = () => {
                             </div>
                             <div className="card-body">
                                 <table className="table table-bordered">
-                                    <img src={dognot} className='ms-5' alt=''></img>
+                                    <img src={dognot} className='ms-4 ms-md-5 w-75 w-md-100 h-75 h-md-100' alt=''></img>
                                 </table>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-6">
-                        {/* Display the second table only on larger screens */}
+                       
                         <div className="card mb-4  border-0">
                             <div className="card-header d-flex justify-content-between align-items-center">
 
@@ -45,12 +45,14 @@ const Table = () => {
                             </div>
                             <div className="card-body">
                                 <table className="table table-bordered">
-                                    <img src={str} className='ms-3' alt=''></img>
+                                    <img src={str} className='ms-3 ms-md-5  w-75 w-md-100 h-75 h-md-100 mt-3 ' alt=''></img>
                                 </table>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
                 <div className="row">
                     <div className="col-md-6">
                         <div className="card mb-4 border-0">

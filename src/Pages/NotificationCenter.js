@@ -13,17 +13,17 @@ const NotificationCenter = () => {
     return (
         <>
             <div className="container-fluid " style={{ marginTop: "90px" }}>
-            <div className='d-flex justify-content-between'>
-                
-               
-                <h5 style={{ color: '#064FB8' }}>
-                New for you
-                                </h5>
-                                <h5 style={{ color: '#064FB8' }}>
-                                Mark all as Read
-                                </h5>
+                <div className='d-flex justify-content-between'>
 
-            </div>
+
+                    <h5 style={{ color: '#064FB8' }}>
+                        New for you
+                    </h5>
+                    <h5 style={{ color: '#064FB8' }}>
+                        Mark all as Read
+                    </h5>
+
+                </div>
                 <div className="card ">
                     <div className="card-body d-flex justify-content-between">
 

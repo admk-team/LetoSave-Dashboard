@@ -1,16 +1,45 @@
 .css-d3dr6d-MuiDrawer-docked {
   width: 0 !important;
-  
+
 }
-.css-d3dr6d-MuiDrawer-docked .MuiDrawer-paper{
+
+/* ChatInput.css */
+
+.chat-input {
+  display: flex;
+ 
+ 
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 15px;
+ border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-color: #E7F1FF;
+}
+
+.chat-input button {
+  padding: 15px 15px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.css-d3dr6d-MuiDrawer-docked .MuiDrawer-paper {
   background-color: #064FB8;
   color: white;
 }
+
 .css-i4bv87-MuiSvgIcon-root {
   width: 1.5em !important;
   height: 2em !important;
 }
-.css-10hburv-MuiTypography-root{
+
+.css-10hburv-MuiTypography-root {
   font-size: 1.2rem !important;
 }
 

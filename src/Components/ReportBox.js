@@ -25,18 +25,21 @@ const ReportBox = () => {
                         </Link>
                     </div>
                     <div className="col-12 col-md-3">
-                        <div className={`box bg-success text-white text-center mb-4 pt-4 pb-4 rounded`}>
-                            <div className="heading" ><img src={im1} alt=''></img></div>
-                            <div className="number mt-3" style={{ fontSize: '40px', fontWeight: "bolder" }}><h4>Transaction Report</h4></div>
-
-                        </div>
+                        <Link to="/Transaction-report" className='text-decoration-none'>
+                            <div className={`box bg-success text-white text-center mb-4 pt-4 pb-4 rounded`}>
+                                <div className="heading" ><img src={im1} alt=''></img></div>
+                                <div className="number mt-3" style={{ fontSize: '40px', fontWeight: "bolder" }}><h4>Transaction Report</h4></div>
+                            </div>
+                        </Link>
                     </div>
                     <div className="col-12 col-md-3">
-                        <div className={`box bg-primary text-white text-center mb-4 pt-4 pb-4 rounded`}>
-                            <div className="heading" ><img src={im2} alt=''></img></div>
-                            <div className="number mt-3" style={{ fontSize: '40px', fontWeight: "bolder" }}><h4>Revenue Report</h4></div>
+                        <Link to="/Revenue-report" className='text-decoration-none'>
+                            <div className={`box bg-primary text-white text-center mb-4 pt-4 pb-4 rounded`}>
+                                <div className="heading" ><img src={im2} alt=''></img></div>
+                                <div className="number mt-3" style={{ fontSize: '40px', fontWeight: "bolder" }}><h4>Revenue Report</h4></div>
 
-                        </div>
+                            </div>
+                        </Link>
                     </div>
                     <div className="col-12 col-md-3">
                         <div className={`box bg-warning text-white text-center mb-4 pt-4 pb-4 rounded`}>
