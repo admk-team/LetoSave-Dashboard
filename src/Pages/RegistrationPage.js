@@ -86,8 +86,8 @@ const RegistrationPage = () => {
                                                 <input type="email" id="form3Example8" className="form-control form-control-lg" placeholder='Email Address' />
                                             </div>
 
-
-                                            <label>Upload Certification of registration</label>
+                                            <div>
+                                                <label>Upload Certification of registration</label>
                                             <div className="upload-container mb-4 mt-1" >
                                                 <div className="upload-icon mt-3">
                                                     <img src={Upload} alt='Upload ' style={{ width: "50px", height: "50px" }}></img>
@@ -110,7 +110,7 @@ const RegistrationPage = () => {
                                                 <input type="file" id="fileInput" className="custom-file-input" />
                                                 <label for="fileInput" class="upload-label"></label>
                                             </div>
-
+                                            </div>
 
                                             <div className="d-grid gap-2">
                                                 <Button variant="primary" size="lg">

@@ -79,9 +79,9 @@ const NotificationNewPage = () => {
                             <MenuIcon />
                         </IconButton>
 
-                        <Typography variant="h6" noWrap component="div">
-                            Dashboard
-                        </Typography>
+                        <Typography variant="h6" noWrap component="div" className='d-none d-lg-block'>
+                        Dashboard
+                    </Typography>
 
 
                         <Stack spacing={4} direction="row" sx={{ color: 'action.active', marginLeft: 'auto' }}>

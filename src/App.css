@@ -7,14 +7,16 @@
 
 .chat-input {
   display: flex;
- 
- 
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .chat-input input {
   flex: 1;
   padding: 15px;
- border: none;
+  border: none;
   border-radius: 4px;
   margin-right: 10px;
   background-color: #E7F1FF;

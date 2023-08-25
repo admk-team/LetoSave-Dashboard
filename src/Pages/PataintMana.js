@@ -78,7 +78,7 @@ const PataintMana = () => {
                             <MenuIcon />
                         </IconButton>
 
-                        <Typography variant="h6" noWrap component="div">
+                        <Typography variant="h6" noWrap component="div" className='d-none d-lg-block'>
                             Dashboard
                         </Typography>
 
@@ -151,27 +151,27 @@ const PataintMana = () => {
                         <ListItem>
                             <img src={Customer} className='me-3' alt=''></img>
                             <Link className="nav-link" to="/service-Management">
-                            <ListItemText primary='Service Management' />
+                                <ListItemText primary='Service Management' />
                             </Link>
                         </ListItem>
                         <ListItem>
                             <img src={Layer} className='me-3' alt=''></img>
                             <Link className="nav-link" to="/Support/Chart-Management">
-                            <ListItemText primary='Support / Chart' />
+                                <ListItemText primary='Support / Chart' />
                             </Link>
                         </ListItem>
                         <ListItem>
                             <img src={report} className='me-3' alt=''></img>
                             <Link className="nav-link" to="/Reports-Management">
-                            <ListItemText primary='Reports' />
+                                <ListItemText primary='Reports' />
                             </Link>
                         </ListItem>
-                        <ListItem className='cursor-pointer'>
-                        <img src={logout} className='me-3' alt=''></img>
-                        
-                            <ListItemText primary='Logout'  onClick={handleLogoutClick} />
-                       
-                    </ListItem>
+                        <ListItem className="cursor-pointer">
+                            <img src={logout} className='me-3' alt=''></img>
+
+                            <ListItemText primary='Logout' onClick={handleLogoutClick} />
+
+                        </ListItem>
                         {/* ))} */}
 
                     </List>
@@ -180,8 +180,10 @@ const PataintMana = () => {
                 </Drawer>
 
                 <main style={{ flexGrow: 1, marginLeft: open ? drawerWidth : 0, backgroundColor: 'wheate' }}>
-                    <PatientManagementPage />
-                    <LogoutModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm}/>
+                    <>
+                        <PatientManagementPage />
+                        <LogoutModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm} />
+                    </>
                 </main>
             </div>
         </>

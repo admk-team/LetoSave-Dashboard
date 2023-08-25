@@ -22,6 +22,8 @@ import WellComeBackPage from './Pages/WellComeBackPage';
 import ForgotPasswordPage from './Pages/ForgotPasswordPage';
 import RegistrationPage from './Pages/RegistrationPage';
 import CreatingPasswordPage from './Pages/CreatingPasswordPage';
+import PatientManagementPage from './Pages/PatientManagementPage';
+import ServiceManagmentPage from './Pages/ServiceManagmentPage';
 //import RegistrationPage from './Pages/RegistrationPage';
 //import OTP from './Components/Dashboardhome/OTP';
 //import Button from 'react-bootstrap/Button';
@@ -73,10 +75,7 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           <Route path="/Registration-page" element={<RegistrationPage />} />
           <Route path="/Reset-Password" element={<CreatingPasswordPage />} />
-
-
-          
-         
+          <Route path="/jok" element={<ServiceManagmentPage />} />      
         </Routes>
       </BrowserRouter>
     </>

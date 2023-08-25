@@ -5,6 +5,7 @@ const DepositManagment = () => {
   return (
     <>
        <div className='' style={{marginTop:"80px"}}>
+       <div className='table-responsive'>
                     <table class="table table-hover">
                         <thead>
                             <tr>
@@ -210,10 +211,12 @@ const DepositManagment = () => {
                             
                            
                             
-                            
-                            
+                          
                         </tbody>
                     </table>
+                    </div>
+
+                    
                 </div>
     </>
   )

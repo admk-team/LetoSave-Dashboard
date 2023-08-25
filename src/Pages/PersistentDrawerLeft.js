@@ -83,7 +83,7 @@ const PersistentDrawerLeft = () => {
                         <MenuIcon />
                     </IconButton>
 
-                    <Typography variant="h6" noWrap component="div">
+                    <Typography variant="h6" noWrap component="div" className='d-none d-lg-block'>
                         Dashboard
                     </Typography>
 
@@ -171,11 +171,10 @@ const PersistentDrawerLeft = () => {
                             <ListItemText primary='Reports' />
                         </Link>
                     </ListItem>
-                    <ListItem className='cursor-pointer'>
+                    <ListItem className="cursor-pointer">
                         <img src={logout} className='me-3' alt=''></img>
                         
-                            <ListItemText primary='Logout'  onClick={handleLogoutClick} />
-                       
+                            <ListItemText primary='Logout'  onClick={handleLogoutClick} />                      
                     </ListItem>
                     {/* ))} */}
 

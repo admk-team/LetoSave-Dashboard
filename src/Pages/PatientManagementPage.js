@@ -11,6 +11,8 @@ import cros from "../Components/Images/cros.png"
 import Tik from "../Components/Assets/Icons/Group 415.png"
 
 
+
+
 const PatientManagementPage = () => {
     return (
         <>
@@ -35,12 +37,12 @@ const PatientManagementPage = () => {
                     </Form>
                 </div>
                 <div className='mt-4 table-responsive'>
-                    <table class="table table-hover">
+                    <table className="table table-hover">
                         <thead>
                             <tr>
                                 <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>
                                     <input className="form-check-input me-3 p-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1" for="invalidCheck" >
+                                    <label className="form-check-label mt-1" htmlFor="invalidCheck" >
                                         Patient's Name
                                     </label></th>
                                 <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Date of Registration</th>
@@ -56,7 +58,7 @@ const PatientManagementPage = () => {
                         <tbody>
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         Alexa Cave
                                     </label>
                                 </th>
@@ -76,11 +78,11 @@ const PatientManagementPage = () => {
                             </tr>
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         Alexa Cave
                                     </label>
                                 </th>
-                                <td>26/02/2023 <br></br>12:42 PM</td>
+                                <td>26/02/2023 12:42 PM</td>
                                 <td className='pt-3'>UGX 2300</td>
                                 <td className='pt-3'>UGX 343546</td>
                                 <td className='pt-3'>UGX 343546</td>
@@ -96,11 +98,11 @@ const PatientManagementPage = () => {
                             </tr>
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         Alexa Cave
                                     </label>
                                 </th>
-                                <td>26/02/2023 <br></br>12:42 PM</td>
+                                <td>26/02/2023 12:42 PM</td>
                                 <td className='pt-3'>UGX 2300</td>
                                 <td className='pt-3'>UGX 343546</td>
                                 <td className='pt-3'>UGX 343546</td>
@@ -116,11 +118,11 @@ const PatientManagementPage = () => {
                             </tr>
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         Alexa Cave
                                     </label>
                                 </th>
-                                <td>26/02/2023 <br></br>12:42 PM</td>
+                                <td>26/02/2023 12:42 PM</td>
                                 <td className='pt-3'>UGX 2300</td>
                                 <td className='pt-3'>UGX 343546</td>
                                 <td className='pt-3'>UGX 343546</td>
@@ -136,11 +138,11 @@ const PatientManagementPage = () => {
                             </tr>
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         Alexa Cave
                                     </label>
                                 </th>
-                                <td>26/02/2023 <br></br>12:42 PM</td>
+                                <td>26/02/2023 12:42 PM</td>
                                 <td className='pt-3'>UGX 2300</td>
                                 <td className='pt-3'>UGX 343546</td>
                                 <td className='pt-3'>UGX 343546</td>
@@ -156,11 +158,11 @@ const PatientManagementPage = () => {
                             </tr>
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         Alexa Cave
                                     </label>
                                 </th>
-                                <td>26/02/2023 <br></br>12:42 PM</td>
+                                <td>26/02/2023 12:42 PM</td>
                                 <td className='pt-3'>UGX 2300</td>
                                 <td className='pt-3'>UGX 343546</td>
                                 <td className='pt-3'>UGX 343546</td>
@@ -176,11 +178,11 @@ const PatientManagementPage = () => {
                             </tr>
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         Alexa Cave
                                     </label>
                                 </th>
-                                <td>26/02/2023 <br></br>12:42 PM</td>
+                                <td>26/02/2023 12:42 PM</td>
                                 <td className='pt-3'>UGX 2300</td>
                                 <td className='pt-3'>UGX 343546</td>
                                 <td className='pt-3'>UGX 343546</td>
@@ -197,6 +199,9 @@ const PatientManagementPage = () => {
                         </tbody>
                     </table>
                 </div>
+
+
+               
             </div>
         </>
     )

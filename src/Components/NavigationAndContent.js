@@ -8,6 +8,7 @@ import bank from "../Components/Images/bank.png"
 import im from "../Components/Images/wallet.png"
 import im1 from "../Components/Images/layer1.png"
 import { Link } from 'react-router-dom';
+import WithdrawModal from './WithdrawModal';
 
 
 
@@ -16,8 +17,25 @@ import { Link } from 'react-router-dom';
 
 const NavigationAndContent = () => {
     const [activeTab, setActiveTab] = useState('profile');
+    const [showLogoutModal, setShowLogoutModal] = useState(false);
 
     const renderContent = () => {
+
+        const handleLogoutClick = () => {
+            setShowLogoutModal(true);
+        };
+    
+        const handleLogoutClose = () => {
+            setShowLogoutModal(false);
+        };
+    
+        const handleLogoutConfirm = () => {
+            // Perform actual logout action here
+            // For example: Redirect to logout page or clear session
+    
+            // Close the modal after logout
+            setShowLogoutModal(false);
+        };
         switch (activeTab) {
             case 'profile':
                 return (
@@ -295,9 +313,10 @@ const NavigationAndContent = () => {
                         <div className='pt-3 px-1 px-md-5'>
                             <div className='d-flex justify-content-end' style={{ marginTop: "-20px", marginBottom: "30px" }}>
 
-                                <Button variant="secondary" size="lg" active style={{ backgroundColor: "#064FB8" }} className='px-4'>
+                                <Button variant="secondary" size="lg" onClick={handleLogoutClick} active style={{ backgroundColor: "#064FB8" }} className='px-4'>
                                     Withdraw
                                 </Button>
+                                <WithdrawModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm}/>
 
                                 
 
