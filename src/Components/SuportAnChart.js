@@ -6,7 +6,7 @@ const SuportAnChart = () => {
     return (
         <>
             <div className='helo'  >
-                <Form style={{ maxWidth: "600px", margin: "0 auto" }}>
+                <Form className="support-form" style={{ margin: "0 auto", position: 'fixed', bottom: '2rem'}}>
                     <div className="chat-input">
                         <input
                             type="text"

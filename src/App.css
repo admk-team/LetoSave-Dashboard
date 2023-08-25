@@ -7,8 +7,19 @@
 }
 /* ChatInput.css */
 
+.support-form {
+  width: 100vw;
+}
+
+@media (min-width: 960px) {
+  .support-form {
+    width: calc(100vw - 279px);
+  }
+}
+
 .chat-input {
   display: flex;
+  justify-content: center;
 }
 
 .cursor-pointer {
@@ -16,12 +27,14 @@
 }
 
 .chat-input input {
-  flex: 1;
+  /* flex: 1; */
   padding: 15px;
   border: none;
   border-radius: 4px;
+  margin-left: 10px;
   margin-right: 10px;
   background-color: #E7F1FF;
+  width: 600px;
 }
 
 .chat-input button {
