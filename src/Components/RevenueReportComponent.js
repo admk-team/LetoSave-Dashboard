@@ -13,7 +13,7 @@ const RevenueReportComponent = () => {
   ];
   return (
     <>
-      <div className="container-fluid " style={{ marginTop: "80px" }}>
+      <div className="container-fluid p-4 p-md-5" style={{ marginTop: "40px" }}>
         <div className="row">
           {boxes.map((box, index) => (
             <div key={index} className="col-12 col-md-4">
@@ -41,7 +41,7 @@ const RevenueReportComponent = () => {
                 </div>
               </div>
               <div className=" d-flex justify-content-center mt-4">
-                <img src={dognot} className='' alt='' ></img>
+                <img src={dognot} className='img-fluid' alt='' ></img>
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@ const RevenueReportComponent = () => {
               </div>
 
               <div className=" d-flex justify-content-center mt-4">
-                <img src={str} className='ms-3' alt=''></img>
+                <img src={str} className=' img-fluid' alt=''></img>
 
               </div>
             </div>
@@ -89,7 +89,7 @@ const RevenueReportComponent = () => {
               </div>
 
               <div className=" d-flex justify-content-center mt-4">
-                <img src={str1} className='mt-3' alt='' style={{ marginLeft: "-25px" }}></img>
+                <img src={str1} className=' img-fluid' alt='' style={{ marginLeft: "-25px" }}></img>
 
               </div>
             </div>
@@ -112,7 +112,7 @@ const RevenueReportComponent = () => {
               </div>
 
               <div className=" d-flex justify-content-center mt-5">
-                <img src={str2} className='' alt='' style={{ marginLeft: "-25px" }}></img>
+                <img src={str2} className='img-fluid' alt='' style={{ marginLeft: "-25px" }}></img>
 
               </div>
             </div>

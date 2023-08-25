@@ -10,11 +10,8 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-
 import ListItemText from '@mui/material/ListItemText';
-
 import MailIcon from '@mui/icons-material/Mail';
-import Boxes from "../Components/Dashboardhome/Boxes"
 import { Avatar, Badge, Divider, Stack } from '@mui/material';
 import NotificationsRoundedIcon from '@mui/icons-material/NotificationsRounded';
 import Logo from "../Components/Assets/Icons/Group 329.png"
@@ -25,16 +22,7 @@ import Ellips from "../Components/Assets/Icons/Icon.png"
 import Layer from "../Components/Assets/Icons/Layer_x0020_1.png"
 import report from "../Components/Assets/Icons/report.png"
 import logout from "../Components/Assets/Icons/logout.png"
-import Table from "../Components/Dashboardhome/Table"
-import PatientManagementPage from './PatientManagementPage';
-import PateintDetail from '../Components/PatientManagementComponents/PateintDetail';
-import DepositManagment from './DepositManagment';
-import ServiceManagmentPage from './ServiceManagmentPage';
-import ServiceManagmentAdd from '../Components/ServiceManagmentAdd';
-import NotificationCenter from './NotificationCenter';
-import Reports from './Reports';
 import { Link } from 'react-router-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PatientReportComponent from '../Components/PatientReportComponent';
 import LogoutModal from '../Components/LogoutModal';
 
@@ -80,7 +68,7 @@ const PatientNew = () => {
     };
 
     return (
-        <div style={{ display: 'flex' }}>
+        <div style={{ display: 'contents' }}>
             <CssBaseline />
             <AppBar position="fixed" sx={{ marginLeft: open ? drawerWidth : 0, width: `calc(100% - ${open ? drawerWidth : 0}px)` }} style={{ backgroundColor: "white", color: "black", boxShadow: "none" }}>
                 <Toolbar>
@@ -197,15 +185,7 @@ const PatientNew = () => {
 
             <main style={{ flexGrow: 1, marginLeft: open ? drawerWidth : 0, backgroundColor: 'wheate' }}>
 
-                {/* <Boxes />
-                <Table /> */}
-                {/* <PatientManagementPage/> */}
-                {/* <PateintDetail/> */}
-                {/* <DepositManagment/> */}
-                {/* <ServiceManagmentPage/> */}
-                {/* <ServiceManagmentAdd/> */}
-                {/* <NotificationCenter/> */}
-                {/* <Reports/> */}
+            
                 <PatientReportComponent/>
                 <LogoutModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm}/>
             </main>

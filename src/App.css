@@ -2,7 +2,9 @@
   width: 0 !important;
 
 }
-
+.custom-modal-width {
+  max-width: 75%;
+}
 /* ChatInput.css */
 
 .chat-input {

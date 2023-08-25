@@ -9,11 +9,13 @@ import Message from "../Components/Images/mess.png"
 import cros from "../Components/Images/cros.png"
 
 import Tik from "../Components/Assets/Icons/Group 415.png"
+import { Link } from 'react-router-dom';
 
 
 
 
 const PatientManagementPage = () => {
+    
     return (
         <>
             <div className="container-fluid " style={{ marginTop: "90px" }}>
@@ -37,6 +39,7 @@ const PatientManagementPage = () => {
                     </Form>
                 </div>
                 <div className='mt-4 table-responsive'>
+                <Link to="/Single-patient-detail" className='text-decoration-none' > 
                     <table className="table table-hover">
                         <thead>
                             <tr>
@@ -198,6 +201,7 @@ const PatientManagementPage = () => {
                             </tr>
                         </tbody>
                     </table>
+                    </Link>
                 </div>
 
 

@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 const SuportAnChart = () => {
     return (
         <>
-            <div className='helo' style={{marginTop:"800px"}} >
+            <div className='helo'  >
                 <Form style={{ maxWidth: "600px", margin: "0 auto" }}>
                     <div className="chat-input">
                         <input

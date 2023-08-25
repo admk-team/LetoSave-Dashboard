@@ -10,7 +10,7 @@ import str2 from "../Components/Images/44.png"
 const PatientReportComponent = () => {
     return (
         <>
-            <div className="container-fluid" style={{marginTop:"80px"}}>
+            <div className="container-fluid p-4 p-md-5" style={{marginTop:"40px"}}>
                 <div className="row g-5">
                     <div className="col-md-6">
                         <div className="card mb-4 border-0">
@@ -26,7 +26,7 @@ const PatientReportComponent = () => {
                             </div>
                             <div className="card-body">
                                 <table className="table table-bordered">
-                                    <img src={dognot} className='' alt='' style={{marginLeft:"-25px"}}></img>
+                                    <img src={dognot} className=' img-fluid mt-4' alt=''></img>
                                 </table>
                             </div>
                         </div>
@@ -46,7 +46,7 @@ const PatientReportComponent = () => {
                             </div>
                             <div className="card-body">
                                 <table className="table table-bordered">
-                                    <img src={str} className='ms-3' alt=''></img>
+                                    <img src={str} className='img-fluid' alt=''></img>
                                 </table>
                             </div>
                         </div>
@@ -67,7 +67,7 @@ const PatientReportComponent = () => {
                             </div>
                             <div className="card-body">
                                 <table className="table table-bordered">
-                                    <img src={str1} className='mt-3' alt='' style={{marginLeft:"-25px"}}></img>
+                                    <img src={str1} className='mt-3 ms-2 img-fluid' alt='' style={{marginLeft:"-25px"}}></img>
                                 </table>
                             </div>
                         </div>
@@ -87,7 +87,7 @@ const PatientReportComponent = () => {
                             </div>
                             <div className="card-body">
                                 <table className="table table-bordered">
-                                    <img src={str2} className='' alt='' style={{marginLeft:"-25px"}}></img>
+                                    <img src={str2} className='ms-1 img-fluid' alt='' style={{marginLeft:"-25px"}}></img>
                                 </table>
                             </div>
                         </div>

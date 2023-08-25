@@ -6,7 +6,7 @@ import logo from "../Components/Images/LetoSave - Logo - White.png"
 const LogoutModal = ({ show, onClose, onLogout }) => {
     return (
         <Modal show={show} onHide={onClose} centered>
-            <Modal.Header className='border-0'>
+            <Modal.Header className='border-0 d-flex justify-content-center' >
                 <Modal.Title><img src={logo} alt=''></img></Modal.Title>
             </Modal.Header>
             <Modal.Body className='mt-3 fw-bold text-center border-0'>Are you sure you want to logout?</Modal.Body>

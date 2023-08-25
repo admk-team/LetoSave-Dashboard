@@ -10,8 +10,8 @@ const WithdrawModal = ({ show, onClose, onLogout }) => {
         <>
             <Modal show={show} onHide={onClose} centered>
                 <img src={logo} alt='' className='mt-2 cursor-pointer ' onClick={onClose} style={{ width: "30px", height: "30px", position: "absolute", top: "10px", right: "10px" }}></img>
-                <Modal.Header className='border-0 mt-4'>
-                    <Modal.Title className='fw-bold' style={{ color: "#064FB8" }}>Withdraw Payment</Modal.Title>
+                <Modal.Header className='border-0 mt-4 d-flex justify-content-center'>
+                    <Modal.Title className='fw-bold ' style={{ color: "#064FB8" }}>Withdraw Payment</Modal.Title>
                 </Modal.Header>
                 <div className='text-center border-0' >
                     Money would be deposited in the following bank account
@@ -35,7 +35,7 @@ const WithdrawModal = ({ show, onClose, onLogout }) => {
                             <h6 className='fw-semibold'>Account Type</h6>
                             <h5 className='fw-bold' style={{ color: "#064FB8" }}>Saving Account</h5>
                         </div>
-                        <div className="text-start me-4">
+                        <div className="text-start me-5">
                             <h6 className='fw-semibold'>IFSC Code</h6>
                             <h5 className='fw-bold' style={{ color: "#064FB8" }}>BNB0001235</h5>
                         </div>

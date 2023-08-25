@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Imag from "../Components/Images/logo.png";
@@ -6,10 +6,28 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import "../App.css"
 import Upload from "../Components/Images/upload.png"
+import WithdrawModal from '../Components/WithdrawModal';
+import OTPModal from '../Components/OTPModal';
 
 
 
 const RegistrationPage = () => {
+    const [showLogoutModal, setShowLogoutModal] = useState(false);
+    const handleLogoutClick = () => {
+        setShowLogoutModal(true);
+    };
+
+    const handleLogoutClose = () => {
+        setShowLogoutModal(false);
+    };
+
+    const handleLogoutConfirm = () => {
+        // Perform actual logout action here
+        // For example: Redirect to logout page or clear session
+
+        // Close the modal after logout
+        setShowLogoutModal(false);
+    };
 
     return (
         <>
@@ -88,34 +106,35 @@ const RegistrationPage = () => {
 
                                             <div>
                                                 <label>Upload Certification of registration</label>
-                                            <div className="upload-container mb-4 mt-1" >
-                                                <div className="upload-icon mt-3">
-                                                    <img src={Upload} alt='Upload ' style={{ width: "50px", height: "50px" }}></img>
+                                                <div className="upload-container mb-4 mt-1 position-relative" >
+                                                    <div className="upload-icon mt-3">
+                                                        <img src={Upload} alt='Upload ' style={{ width: "50px", height: "50px" }}></img>
+                                                    </div>
+                                                    <p className="upload-text mb-1">Click to upload or drag and drop</p>
+                                                    <p className=" text-dark mb-3 " style={{ color: 'black' }}>Maximum file size 50 MB</p>
+
+                                                    <label for="fileInput" className="upload-label"></label>
                                                 </div>
-                                                <p className="upload-text mb-1">Click to upload or drag and drop</p>
-                                                <p className=" text-dark mb-3 " style={{ color: 'black' }}>Maximum file size 50 MB</p>
 
-                                                <label for="fileInput" className="upload-label"></label>
-                                            </div>
+                                                <label>Hospital License</label>
+                                                <div className="upload-container mb-4 mt-1 position-relative" >
 
-                                            <label>Hospital License</label>
-                                            <div className="upload-container mb-4 mt-1" >
+                                                    <div className="upload-icon mt-3">
+                                                        <img src={Upload} alt='Upload ' style={{ width: "50px", height: "50px" }}></img>
+                                                    </div>
+                                                    <p className="upload-text mb-1">Click to upload or drag and drop</p>
+                                                    <p className=" text-dark mb-3" style={{ color: 'black' }}>Maximum file size 50 MB</p>
 
-                                                <div className="upload-icon mt-3">
-                                                    <img src={Upload} alt='Upload ' style={{ width: "50px", height: "50px" }}></img>
+                                                    <input type="file" id="fileInput" className="custom-file-input" />
+                                                    <label for="fileInput" class="upload-label"></label>
                                                 </div>
-                                                <p className="upload-text mb-1">Click to upload or drag and drop</p>
-                                                <p className=" text-dark mb-3" style={{ color: 'black' }}>Maximum file size 50 MB</p>
-
-                                                <input type="file" id="fileInput" className="custom-file-input" />
-                                                <label for="fileInput" class="upload-label"></label>
-                                            </div>
                                             </div>
 
                                             <div className="d-grid gap-2">
-                                                <Button variant="primary" size="lg">
+                                                <Button variant="primary" size="lg" onClick={handleLogoutClick}>
                                                     Register Now
                                                 </Button>
+                                                <OTPModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm}/>
                                             </div>
                                         </div>
                                     </div>

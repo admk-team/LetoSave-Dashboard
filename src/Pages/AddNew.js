@@ -77,7 +77,7 @@ const AddNew = () => {
         <>
 
             return (
-            <div style={{ display: 'flex' }}>
+            <div style={{ display: 'contents' }}>
                 <CssBaseline />
                 <AppBar position="fixed" sx={{ marginLeft: open ? drawerWidth : 0, width: `calc(100% - ${open ? drawerWidth : 0}px)` }} style={{ backgroundColor: "white", color: "black", boxShadow: "none" }}>
                     <Toolbar>

@@ -37,10 +37,10 @@ const PersistentDrawerLeft = () => {
     const [showLogoutModal, setShowLogoutModal] = useState(false);
 
 
-    const [open, setOpen] = useState(window.innerWidth >= 960);
+    const [open, setOpen] = useState(window.innerWidth >= 1026);
     useEffect(() => {
         const handleResize = () => {
-            setOpen(window.innerWidth >= 960);
+            setOpen(window.innerWidth >= 1026);
         };
         window.addEventListener('resize', handleResize);
         return () => {
@@ -68,7 +68,7 @@ const PersistentDrawerLeft = () => {
     };
 
     return (
-        <div style={{ display: 'flex' }}>
+        <div style={{ display: 'contents' }}>
             <CssBaseline />
             <AppBar position="fixed" sx={{ marginLeft: open ? drawerWidth : 0, width: `calc(100% - ${open ? drawerWidth : 0}px)` }} style={{ backgroundColor: "white", color: "black", boxShadow: "none" }}>
                 <Toolbar>

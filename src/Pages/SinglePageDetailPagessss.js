@@ -1,8 +1,6 @@
-
-// export default AddBankAccountNewPage
+// export default SinglePageDetailPagessss
 import React from 'react'
-
-import { useState , useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Drawer from '@mui/material/Drawer';
 import AppBar from '@mui/material/AppBar';
@@ -12,11 +10,8 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-
 import ListItemText from '@mui/material/ListItemText';
-
 import MailIcon from '@mui/icons-material/Mail';
-
 import { Avatar, Badge, Divider, Stack } from '@mui/material';
 import NotificationsRoundedIcon from '@mui/icons-material/NotificationsRounded';
 import Logo from "../Components/Assets/Icons/Group 329.png"
@@ -27,19 +22,14 @@ import Ellips from "../Components/Assets/Icons/Icon.png"
 import Layer from "../Components/Assets/Icons/Layer_x0020_1.png"
 import report from "../Components/Assets/Icons/report.png"
 import logout from "../Components/Assets/Icons/logout.png"
-
-import DepositManagment from './DepositManagment';
-
 import { Link } from 'react-router-dom';
-import AddBankAccount from '../Components/AddBankAccount';
 import LogoutModal from '../Components/LogoutModal';
+import SinglePatientDetail from '../Components/SinglePatientDetail';
 
 
 const drawerWidth = 280;
-
-const AddBankAccountNewPage = () => {
+const SinglePageDetailPagessss = () => {
     const [showLogoutModal, setShowLogoutModal] = useState(false);
-
     const [open, setOpen] = useState(window.innerWidth >= 960);
     useEffect(() => {
         const handleResize = () => {
@@ -72,6 +62,8 @@ const AddBankAccountNewPage = () => {
 
     return (
         <>
+
+            return (
             <div style={{ display: 'contents' }}>
                 <CssBaseline />
                 <AppBar position="fixed" sx={{ marginLeft: open ? drawerWidth : 0, width: `calc(100% - ${open ? drawerWidth : 0}px)` }} style={{ backgroundColor: "white", color: "black", boxShadow: "none" }}>
@@ -88,8 +80,8 @@ const AddBankAccountNewPage = () => {
                         </IconButton>
 
                         <Typography variant="h6" noWrap component="div" className='d-none d-lg-block'>
-                        Dashboard
-                    </Typography>
+                            Dashboard
+                        </Typography>
 
 
                         <Stack spacing={4} direction="row" sx={{ color: 'action.active', marginLeft: 'auto' }}>
@@ -160,27 +152,27 @@ const AddBankAccountNewPage = () => {
                         <ListItem>
                             <img src={Customer} className='me-3' alt=''></img>
                             <Link className="nav-link" to="/service-Management">
-                            <ListItemText primary='Service Management' />
+                                <ListItemText primary='Service Management' />
                             </Link>
                         </ListItem>
                         <ListItem>
                             <img src={Layer} className='me-3' alt=''></img>
                             <Link className="nav-link" to="/Support/Chart-Management">
-                            <ListItemText primary='Support / Chart' />
+                                <ListItemText primary='Support / Chart' />
                             </Link>
                         </ListItem>
                         <ListItem>
                             <img src={report} className='me-3' alt=''></img>
                             <Link className="nav-link" to="/Reports-Management">
-                            <ListItemText primary='Reports' />
+                                <ListItemText primary='Reports' />
                             </Link>
                         </ListItem>
-                        <ListItem className='cursor-pointer'>
-                        <img src={logout} className='me-3' alt=''></img>
-                        
-                            <ListItemText primary='Logout'  onClick={handleLogoutClick} />
-                       
-                    </ListItem>
+                        <ListItem className="cursor-pointer">
+                            <img src={logout} className='me-3' alt=''></img>
+
+                            <ListItemText primary='Logout' onClick={handleLogoutClick} />
+
+                        </ListItem>
                         {/* ))} */}
 
                     </List>
@@ -189,15 +181,14 @@ const AddBankAccountNewPage = () => {
                 </Drawer>
 
                 <main style={{ flexGrow: 1, marginLeft: open ? drawerWidth : 0, backgroundColor: 'wheate' }}>
-
-                   
-                    <AddBankAccount/>
-                    <LogoutModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm}/>
-                   
+                    <>
+                        <SinglePatientDetail />
+                        <LogoutModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm} />
+                    </>
                 </main>
             </div>
         </>
     )
 }
 
-export default AddBankAccountNewPage
+export default SinglePageDetailPagessss
