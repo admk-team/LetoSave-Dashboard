@@ -19,7 +19,7 @@ const ReportBox = () => {
                         <Link to="/Patient-report" className='text-decoration-none'>
                             <div className={`box bg-danger text-white text-center mb-4 pt-4 pb-4 rounded`}>
                                 <div className="heading" ><img src={im} alt=''></img></div>
-                                <div className="number mt-3 " style={{ fontSize: '40px', fontWeight: "bolder" }}><h4>Pateint Report</h4></div>
+                                <div className=" mt-3 " ><h4 className='number-one'>Patient Report</h4></div>
 
                             </div>
                         </Link>
@@ -28,7 +28,7 @@ const ReportBox = () => {
                         <Link to="/Transaction-report" className='text-decoration-none'>
                             <div className={`box bg-success text-white text-center mb-4 pt-4 pb-4 rounded`}>
                                 <div className="heading" ><img src={im1} alt=''></img></div>
-                                <div className="number mt-3" style={{ fontSize: '40px', fontWeight: "bolder" }}><h4>Transaction Report</h4></div>
+                                <div className="number-one mt-3" ><h4 className='number-one'>Transaction Report</h4></div>
                             </div>
                         </Link>
                     </div>
@@ -36,7 +36,7 @@ const ReportBox = () => {
                         <Link to="/Revenue-report" className='text-decoration-none'>
                             <div className={`box bg-primary text-white text-center mb-4 pt-4 pb-4 rounded`}>
                                 <div className="heading" ><img src={im2} alt=''></img></div>
-                                <div className="number mt-3" style={{ fontSize: '40px', fontWeight: "bolder" }}><h4>Revenue Report</h4></div>
+                                <div className="number-one mt-3" ><h4 className='number-one'>Revenue Report</h4></div>
 
                             </div>
                         </Link>
@@ -44,7 +44,7 @@ const ReportBox = () => {
                     <div className="col-12 col-md-3">
                         <div className={`box bg-warning text-white text-center mb-4 pt-4 pb-4 rounded`}>
                             <div className="heading" ><img src={im3} alt=''></img></div>
-                            <div className="number mt-3" style={{ fontSize: '40px', fontWeight: "bolder" }}><h4>Performance</h4></div>
+                            <div className="number-one mt-3" ><h4 className='number-one'>Performance</h4></div>
 
                         </div>
                     </div>

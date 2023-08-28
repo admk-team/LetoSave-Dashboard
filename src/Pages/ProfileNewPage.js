@@ -81,14 +81,16 @@ const ProfileNewPage = () => {
                         </IconButton>
 
                         <Typography variant="h6" noWrap component="div" className='d-none d-lg-block'>
-                        Dashboard
-                    </Typography>
+                            Profile
+                        </Typography>
 
 
                         <Stack spacing={4} direction="row" sx={{ color: 'action.active', marginLeft: 'auto' }}>
-                            <Badge color="secondary" badgeContent={0}>
-                                <MailIcon sx={{ fontSize: 23, color: '#FF7070' }} style={{ marginTop: "10px" }} />
-                            </Badge>
+                            <Link className="nav-link" to="/Support/Chart-Management">
+                                <Badge color="secondary" badgeContent={0}>
+                                    <MailIcon sx={{ fontSize: 23, color: '#FF7070' }} style={{ marginTop: "10px" }} />
+                                </Badge>
+                            </Link>
                             <Link to="/Notification" >
                                 <Badge color="secondary" showZero>
                                     <NotificationsRoundedIcon sx={{ fontSize: 25, }} className='mt-2' />
@@ -96,8 +98,7 @@ const ProfileNewPage = () => {
                             </Link>
                             <Badge color="secondary" showZero>
                                 <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                                <Link to="/Profile" className='ms-3' style={{ textDecoration: "none", color: "black" }}>Flexi Health<p className='Adin'>Admin</p></Link>
-                            </Badge>
+                                <Link to="/Profile" className='ms-3' style={{ textDecoration: "none", color: "black" }}><h6 className='admin-name'>Flexi Health</h6><p className='Adin'>Admin</p></Link>                            </Badge>
 
                         </Stack>
                     </Toolbar>
@@ -153,27 +154,27 @@ const ProfileNewPage = () => {
                         <ListItem>
                             <img src={Customer} className='me-3' alt=''></img>
                             <Link className="nav-link" to="/service-Management">
-                            <ListItemText primary='Service Management' />
+                                <ListItemText primary='Service Management' />
                             </Link>
                         </ListItem>
                         <ListItem>
                             <img src={Layer} className='me-3' alt=''></img>
                             <Link className="nav-link" to="/Support/Chart-Management">
-                            <ListItemText primary='Support / Chart' />
+                                <ListItemText primary='Support / Chart' />
                             </Link>
                         </ListItem>
                         <ListItem>
                             <img src={report} className='me-3' alt=''></img>
                             <Link className="nav-link" to="/Reports-Management">
-                            <ListItemText primary='Reports' />
+                                <ListItemText primary='Reports' />
                             </Link>
                         </ListItem>
                         <ListItem className='cursor-pointer'>
-                        <img src={logout} className='me-3' alt=''></img>
-                        
-                            <ListItemText primary='Logout'  onClick={handleLogoutClick} />
-                       
-                    </ListItem>
+                            <img src={logout} className='me-3' alt=''></img>
+
+                            <ListItemText primary='Logout' onClick={handleLogoutClick} />
+
+                        </ListItem>
                         {/* ))} */}
 
                     </List>
@@ -182,8 +183,8 @@ const ProfileNewPage = () => {
                 </Drawer>
 
                 <main style={{ flexGrow: 1, marginLeft: open ? drawerWidth : 0, backgroundColor: 'wheate' }}>
-                   <NavigationAndContent/>
-                   <LogoutModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm}/>
+                    <NavigationAndContent />
+                    <LogoutModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm} />
                 </main>
             </div>
         </>

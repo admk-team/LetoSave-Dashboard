@@ -12,13 +12,13 @@ import { Link } from 'react-router-dom';
 const ServiceManagmentPage = () => {
     return (
         <>
-            <div className="container-fluid " style={{ marginTop: "90px" }}>
+            <div className="container-fluid " style={{ marginTop: "80px" }}>
                 <div className='d-flex justify-content-end'>
                     <Form inline>
                         <Row>
                             <Col xs="auto">
                                 <Link to="/AddServicemanagement" >
-                                    <Button variant="secondary" size="lg" active style={{ backgroundColor: "#064FB8" }}>
+                                    <Button variant="secondary" className='add-butoon' size="lg" active style={{ backgroundColor: "#064FB8" }}>
                                         + Add New
                                     </Button>
                                 </Link>
@@ -26,24 +26,24 @@ const ServiceManagmentPage = () => {
                         </Row>
                     </Form>
                 </div>
-                <div className='mt-4'>
+                <div className='mt-3'>
                     <div className='table-responsive'>
-                        <table class="table table-hover">
+                        <table class="table table-hover text-center">
                             <thead>
                                 <tr>
-                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>
-                                        <input className="form-check-input me-3 p-2" type="checkbox" value="" id="invalidCheck" required />
+                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>
+                                        <input className="form-check-input me-1 p-2" type="checkbox" value="" id="invalidCheck" required />
                                         <label className="form-check-label mt-1" for="invalidCheck" >
                                             Service Name
                                         </label></th>
-                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Ward Type</th>
-                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Room Type</th>
-                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Delivery Type</th>
-                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Service Description</th>
-                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Cost</th>
-                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Postanatal Care</th>
-                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Doctor's Fees</th>
-                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}></th>
+                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Ward Type</th>
+                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Room Type</th>
+                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Delivery Type</th>
+                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Service Description</th>
+                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Cost</th>
+                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Postanatal Care</th>
+                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Doctor's Fees</th>
+                                    <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}></th>
 
                                 </tr>
                             </thead>
@@ -59,9 +59,9 @@ const ServiceManagmentPage = () => {
                                     <td>Double<br></br>Accupancy</td>
                                     <td className='pt-3'>C-Section</td>
                                     <td className='pt-3'>Coming Soon</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 850,500</td>
                                     <td className='pt-3'>Yes</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 150,000</td>
                                     <td>
                                         <img src={cros} className='me-2' alt='' />
                                     </td>
@@ -77,9 +77,9 @@ const ServiceManagmentPage = () => {
                                     <td>Double<br></br>Accupancy</td>
                                     <td className='pt-3'>C-Section</td>
                                     <td className='pt-3'>Coming Soon</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 850,500</td>
                                     <td className='pt-3'>Yes</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 150,000</td>
                                     <td>
                                         <img src={cros} className='me-2' alt='' />
                                     </td>
@@ -95,9 +95,9 @@ const ServiceManagmentPage = () => {
                                     <td>Double<br></br>Accupancy</td>
                                     <td className='pt-3'>C-Section</td>
                                     <td className='pt-3'>Coming Soon</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 850,500</td>
                                     <td className='pt-3'>Yes</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 150,000</td>
                                     <td>
                                         <img src={cros} className='me-2' alt='' />
                                     </td>
@@ -113,9 +113,9 @@ const ServiceManagmentPage = () => {
                                     <td>Double<br></br>Accupancy</td>
                                     <td className='pt-3'>C-Section</td>
                                     <td className='pt-3'>Coming Soon</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 850,500</td>
                                     <td className='pt-3'>Yes</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 150,000</td>
                                     <td>
                                         <img src={cros} className='me-2' alt='' />
                                     </td>
@@ -131,9 +131,9 @@ const ServiceManagmentPage = () => {
                                     <td>Double<br></br>Accupancy</td>
                                     <td className='pt-3'>C-Section</td>
                                     <td className='pt-3'>Coming Soon</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 850,500</td>
                                     <td className='pt-3'>Yes</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 150,000</td>
                                     <td>
                                         <img src={cros} className='me-2' alt='' />
                                     </td>
@@ -149,9 +149,9 @@ const ServiceManagmentPage = () => {
                                     <td>Double<br></br>Accupancy</td>
                                     <td className='pt-3'>C-Section</td>
                                     <td className='pt-3'>Coming Soon</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 850,500</td>
                                     <td className='pt-3'>Yes</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 150,000</td>
                                     <td>
                                         <img src={cros} className='me-2' alt='' />
                                     </td>
@@ -167,9 +167,9 @@ const ServiceManagmentPage = () => {
                                     <td>Double<br></br>Accupancy</td>
                                     <td className='pt-3'>C-Section</td>
                                     <td className='pt-3'>Coming Soon</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 850,500</td>
                                     <td className='pt-3'>Yes</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 150,000</td>
                                     <td>
                                         <img src={cros} className='me-2' alt='' />
                                     </td>
@@ -185,9 +185,9 @@ const ServiceManagmentPage = () => {
                                     <td>Double<br></br>Accupancy</td>
                                     <td className='pt-3'>C-Section</td>
                                     <td className='pt-3'>Coming Soon</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 850,500</td>
                                     <td className='pt-3'>Yes</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 150,000</td>
                                     <td>
                                         <img src={cros} className='me-2' alt='' />
                                     </td>
@@ -203,9 +203,9 @@ const ServiceManagmentPage = () => {
                                     <td>Double<br></br>Accupancy</td>
                                     <td className='pt-3'>C-Section</td>
                                     <td className='pt-3'>Coming Soon</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 850,500</td>
                                     <td className='pt-3'>Yes</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 150,000</td>
                                     <td>
                                         <img src={cros} className='me-2' alt='' />
                                     </td>
@@ -221,9 +221,9 @@ const ServiceManagmentPage = () => {
                                     <td>Double<br></br>Accupancy</td>
                                     <td className='pt-3'>C-Section</td>
                                     <td className='pt-3'>Coming Soon</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 850,500</td>
                                     <td className='pt-3'>Yes</td>
-                                    <td className='pt-3'>UGX23435</td>
+                                    <td className='pt-3'>UGX 150,000</td>
                                     <td>
                                         <img src={cros} className='me-2' alt='' />
                                     </td>

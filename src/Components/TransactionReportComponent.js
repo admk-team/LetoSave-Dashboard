@@ -1,8 +1,8 @@
 import React from 'react'
-import dognot from "../Components/Images/111.png"
-import str from "../Components/Images/222.png"
-import str1 from "../Components/Images/333.png"
-import str2 from "../Components/Images/444.png"
+import dognot from "../Components/Images/Untitled design (22).png"
+import str from "../Components/Images/Untitled design (33).png"
+import str1 from "../Components/Images/Untitled design (44).png"
+import str2 from "../Components/Images/Untitled design (55).png"
 
 
 const TransactionReportComponent = () => {
@@ -71,7 +71,7 @@ const TransactionReportComponent = () => {
                             </div>
 
                             <div className=" d-flex justify-content-center mt-4">
-                                <img src={str1} className='mt-3 img-fluid' alt='' style={{ marginLeft: "-25px" }}></img>
+                                <img src={str1} className=' img-fluid' alt='' ></img>
 
                             </div>
                         </div>
@@ -90,28 +90,29 @@ const TransactionReportComponent = () => {
                                 </div>
                             </div>
 
-                            <div className=" d-flex justify-content-center mt-5">
-                                <img src={str2} className='img-fluid' alt='' style={{ marginLeft: "-25px" }}></img>
+                            <div className=" d-flex justify-content-center mt-4">
+                                <img src={str2} className='img-fluid' alt='' ></img>
 
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='table-responsive mt-3'>
-                    <table class="table table-hover">
+                    <table class="table table-hover text-center">
                         <thead>
                             <tr>
-                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>
+                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>
                                     <input className="form-check-input me-3 p-2" type="checkbox" value="" id="invalidCheck" required />
                                     <label className="form-check-label mt-1" for="invalidCheck" >
-                                        Patient's Name
+                                        Patient Name
                                     </label></th>
-                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Service</th>
-                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Transaction Date</th>
-                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Transaction ID</th>
-                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Phone Number</th>
-                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Transaction Status</th>
-                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Amount</th>
+                               
+                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Transaction Date</th>
+                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Service</th>
+                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Transaction ID</th>
+                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Phone Number</th>
+                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Status</th>
+                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Amount</th>
 
                             </tr>
                         </thead>
@@ -122,13 +123,13 @@ const TransactionReportComponent = () => {
                                         Alexa Cave
                                     </label>
                                 </th>
-                                <td className='pt-3'>Private</td>
-                                <td>26/02/2023 <br></br>12:42 PM</td>
-
-                                <td className='pt-3'>TTC3453647657575</td>
-                                <td className='pt-3'>+91 2345 233546</td>
+                               
+                                <td className='pt-3'>26/02/2023 | 12:42 PM</td>
+                                <td className='pt-3'>Double Room-Normal</td>
+                                <td className='pt-3'>303963058</td>
+                                <td className='pt-3'>+91 23452335</td>
                                 <td ><span className="badge text-bg-warning p-2 me-2 mt-2 ">PENDING</span> </td>
-                                <td className='pt-3'>UGX3437</td>
+                                <td className='pt-3'>UGX 150,000</td>
 
                             </tr>
                             <tr style={{ fontSize: "0.9em", }}>
@@ -137,13 +138,13 @@ const TransactionReportComponent = () => {
                                         Alexa Cave
                                     </label>
                                 </th>
-                                <td className='pt-3'>Private</td>
-                                <td>26/02/2023 <br></br>12:42 PM</td>
-
-                                <td className='pt-3'>TTC3453647657575</td>
-                                <td className='pt-3'>+91 2345 233546</td>
+                               
+                                <td className='pt-3'>26/02/2023 | 12:42 PM</td>
+                                <td className='pt-3'>Double Room-Normal</td>
+                                <td className='pt-3'>303963058</td>
+                                <td className='pt-3'>+91 23452335</td>
                                 <td ><span className="badge text-bg-warning p-2 me-2 mt-2 ">PENDING</span> </td>
-                                <td className='pt-3'>UGX3437</td>
+                                <td className='pt-3'>UGX 150,000</td>
 
                             </tr>
                             <tr style={{ fontSize: "0.9em", }}>
@@ -152,13 +153,13 @@ const TransactionReportComponent = () => {
                                         Alexa Cave
                                     </label>
                                 </th>
-                                <td className='pt-3'>Private</td>
-                                <td>26/02/2023 <br></br>12:42 PM</td>
-
-                                <td className='pt-3'>TTC3453647657575</td>
-                                <td className='pt-3'>+91 2345 233546</td>
+                               
+                                <td className='pt-3'>26/02/2023 | 12:42 PM</td>
+                                <td className='pt-3'>Double Room-Normal</td>
+                                <td className='pt-3'>303963058</td>
+                                <td className='pt-3'>+91 23452335</td>
                                 <td ><span className="badge text-bg-warning p-2 me-2 mt-2 ">PENDING</span> </td>
-                                <td className='pt-3'>UGX3437</td>
+                                <td className='pt-3'>UGX 150,000</td>
 
                             </tr>
 

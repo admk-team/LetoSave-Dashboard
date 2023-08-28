@@ -34,16 +34,16 @@ const ForgotPasswordPage = () => {
 
                                             </div>
                                             <div className="d-grid gap-2 mt-4">
-                                                <Link to="/Reset-Password" >
-                                                    <Button to="/Reset-Password" variant="primary" size="lg">
+                                                <Link to="/Reset-Password" className='text-decoration-none text-center  text-white rounded p-3 fw-semibold' style={{backgroundColor:'#064FB8'}} >
+        
                                                         Reset Password
-                                                    </Button>
+                                                   
                                                 </Link>
                                             </div>
-                                            <div className=" mt-4 rounded py-2 d-flex justify-content-center border border-black" >
-                                                <a href='!#' size="lg" className='text-decoration-none text-dark'>
+                                            <div className=" mt-4 rounded d-flex justify-content-center border border-black" style={{padding:'12px'}}>
+                                                <Link to='/Welcome-back' size="lg" className='text-decoration-none text-dark'>
                                                     <img src={Back} alt='Back' style={{ width: "20px", height: "20px" }}></img>  Back to log in
-                                                </a>
+                                                </Link>
                                             </div>
 
                                         </div>

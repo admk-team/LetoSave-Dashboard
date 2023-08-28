@@ -64,10 +64,13 @@ const RegistrationPage = () => {
 
                                             <div className="row">
                                                 <div className="col-md-6 mb-4">
-                                                    <div className="form-outline">
-                                                        <input type="text" id="form3Example1m1" className="form-control form-control-lg" placeholder='District' />
-
-                                                    </div>
+                                                   
+                                                <Form.Select size="lg">
+                                                        <option>District</option>
+                                                        <option value="2">Option 1</option>
+                                                        <option value="3">Option 2</option>
+                                                        <option value="4">Option 3</option>
+                                                    </Form.Select>
                                                 </div>
                                                 <div className="col-md-6 mb-4">
 

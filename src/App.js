@@ -22,8 +22,6 @@ import WellComeBackPage from './Pages/WellComeBackPage';
 import ForgotPasswordPage from './Pages/ForgotPasswordPage';
 import RegistrationPage from './Pages/RegistrationPage';
 import CreatingPasswordPage from './Pages/CreatingPasswordPage';
-import PatientManagementPage from './Pages/PatientManagementPage';
-import ServiceManagmentPage from './Pages/ServiceManagmentPage';
 import SinglePatientDetail from './Components/SinglePatientDetail';
 import SinglePageDetailPagessss from './Pages/SinglePageDetailPagessss';
 //import RegistrationPage from './Pages/RegistrationPage';

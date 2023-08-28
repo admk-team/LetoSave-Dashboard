@@ -9,11 +9,8 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-
 import ListItemText from '@mui/material/ListItemText';
-
 import MailIcon from '@mui/icons-material/Mail';
-import Boxes from "../Components/Dashboardhome/Boxes"
 import { Avatar, Badge, Divider, Stack } from '@mui/material';
 import NotificationsRoundedIcon from '@mui/icons-material/NotificationsRounded';
 import Logo from "../Components/Assets/Icons/Group 329.png"
@@ -24,16 +21,8 @@ import Ellips from "../Components/Assets/Icons/Icon.png"
 import Layer from "../Components/Assets/Icons/Layer_x0020_1.png"
 import report from "../Components/Assets/Icons/report.png"
 import logout from "../Components/Assets/Icons/logout.png"
-import Table from "../Components/Dashboardhome/Table"
-import PatientManagementPage from './PatientManagementPage';
-import PateintDetail from '../Components/PatientManagementComponents/PateintDetail';
-import DepositManagment from './DepositManagment';
 import ServiceManagmentPage from './ServiceManagmentPage';
-import ServiceManagmentAdd from '../Components/ServiceManagmentAdd';
-import NotificationCenter from './NotificationCenter';
-import Reports from './Reports';
 import { Link } from 'react-router-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LogoutModal from '../Components/LogoutModal';
 
 
@@ -94,14 +83,16 @@ const SerVicessssPage = () => {
                     </IconButton>
 
                     <Typography variant="h6" noWrap component="div" className='d-none d-lg-block'>
-                        Dashboard
+                        Service Management
                     </Typography>
 
 
                     <Stack spacing={4} direction="row" sx={{ color: 'action.active', marginLeft: 'auto' }}>
+                    <Link className="nav-link" to="/Support/Chart-Management">
                         <Badge color="secondary" badgeContent={0}>
                             <MailIcon sx={{ fontSize: 23, color: '#FF7070' }} style={{ marginTop: "10px" }} />
                         </Badge>
+                        </Link>
                         <Link to="/Notification" >
                             <Badge color="secondary" showZero>
                                 <NotificationsRoundedIcon sx={{ fontSize: 25, }} className='mt-2' />
@@ -109,8 +100,7 @@ const SerVicessssPage = () => {
                         </Link>
                         <Badge color="secondary" showZero>
                             <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                            <Link to="/Profile" className='ms-3' style={{ textDecoration: "none", color: "black" }}>Flexi Health<p className='Adin'>Admin</p></Link>
-                        </Badge>
+                            <Link to="/Profile" className='ms-3' style={{ textDecoration: "none", color: "black" }}><h6 className='admin-name'>Flexi Health</h6><p className='Adin'>Admin</p></Link>                        </Badge>
 
                     </Stack>
                 </Toolbar>
@@ -194,18 +184,9 @@ const SerVicessssPage = () => {
 
             </Drawer>
 
-            <main style={{ flexGrow: 1, marginLeft: open ? drawerWidth : 0, backgroundColor: 'wheate' }}>
-
-                {/* <Boxes />
-                <Table /> */}
-                {/* <PatientManagementPage/> */}
-                {/* <PateintDetail/> */}
-                {/* <DepositManagment/> */}
-                <ServiceManagmentPage />
+            <main style={{ flexGrow: 1, marginLeft: open ? drawerWidth : 0, backgroundColor: 'wheate' }}>       
+               <ServiceManagmentPage />
                 <LogoutModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm} />
-                {/* <ServiceManagmentAdd/> */}
-                {/* <NotificationCenter/> */}
-                {/* <Reports/> */}
             </main>
         </div>
     );

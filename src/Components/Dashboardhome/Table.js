@@ -1,9 +1,34 @@
 import React from 'react'
-import dognot from "../Images/dugnu.png"
-import str from "../Images/striat.png"
+import c1 from "../Images/Untitled design (no2) (1).png"
+import c2 from "../Images/Untitled design (no2) (2).png"
 
+import str from "../Images/anChange.png"
+// import { Doughnut } from 'react-chartjs-2';
 import Img from "../Images/more.png"
 import { Avatar } from '@mui/material'
+// import { Chart, ArcElement } from 'chart.js'
+// Chart.register(ArcElement);
+
+
+
+// const data = {
+//     labels: [
+//         'Red',
+//         'Blue',
+//         'Yellow',
+        
+//     ],
+//     datasets: [{
+//         label: 'My First Dataset',
+//         data: [300, 50, 100],
+//         backgroundColor: [
+//             'rgb(255, 99, 132)',
+//             'rgb(54, 162, 235)',
+//             'rgb(255, 205, 86)'
+//         ],
+//         hoverOffset: 4
+//     }]
+// };
 
 const Table = () => {
 
@@ -18,20 +43,23 @@ const Table = () => {
                                 <div >
                                     <h5 className='fw-semibold'>Savings</h5>
                                 </div>
-                                <div className="d-flex align-items-center">
+                                <div className="d-flex align-items-center text-center">
 
                                     <img src={Img} alt='' style={{ width: '40px', height: '30px' }}></img>
                                 </div>
                             </div>
                             <div className="card-body">
-                                <table className="table table-bordered">
-                                    <img src={dognot} className='ms-3 ms-md-5 w-75 w-md-100 h-75 h-md-100' alt=''></img>
+                                <table className="table table-bordered text-center">
+                                    <img src={c1} className='img-fluid' alt='' ></img>
+                                    {/* <Doughnut
+                                        data={data}
+                                    /> */}
                                 </table>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-6">
-                       
+
                         <div className="card mb-4  border-0">
                             <div className="card-header d-flex justify-content-between align-items-center">
 
@@ -44,8 +72,8 @@ const Table = () => {
                                 </div>
                             </div>
                             <div className="card-body">
-                                <table className="table table-bordered">
-                                    <img src={str} className='ms-3 ms-md-5  w-75 w-md-100 h-75 h-md-100 mt-3 ' alt=''></img>
+                                <table className="table table-bordered text-center">
+                                    <img src={c2} className='img-fluid' alt='' ></img>
                                 </table>
                             </div>
                         </div>
@@ -71,9 +99,9 @@ const Table = () => {
                                         <thead >
                                             <tr >
 
-                                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Patient</th>
-                                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8", textAlign: "center" }}>Deposite Ammount</th>
-                                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8", textAlign: "center" }}>Time of Transaction</th>
+                                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Patient</th>
+                                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8", textAlign: "center" }}>Deposite Ammount</th>
+                                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8", textAlign: "center" }}>Time of Transaction</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -138,12 +166,12 @@ const Table = () => {
                         </div>
                     </div>
                     <div className="col-md-6">
-                        
+
                         <div className="card mb-4 border-0">
                             <div className="card-header d-flex justify-content-between align-items-center border-0">
 
                                 <div>
-                                    <h5 className='fw-semibold'>Recent Registration</h5>
+                                    <h5 className='fw-semibold'>Recent Registrations</h5>
                                 </div>
                                 <div className="d-flex align-items-center">
 
@@ -156,9 +184,9 @@ const Table = () => {
                                         <thead >
                                             <tr >
 
-                                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Patient</th>
-                                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8", textAlign: "center" }}>Deposite Ammount</th>
-                                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8", textAlign: "center" }}>Time of Transaction</th>
+                                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Patient</th>
+                                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8", textAlign: "center" }}>Deposite Ammount</th>
+                                                <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8", textAlign: "center" }}>Time of Transaction</th>
                                             </tr>
                                         </thead>
                                         <tbody>

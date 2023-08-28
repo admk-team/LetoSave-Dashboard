@@ -1,14 +1,14 @@
 import React from 'react'
-import dognot from "../Components/Images/1111.png"
-import str from "../Components/Images/2222.png"
-import str1 from "../Components/Images/3333.png"
-import str2 from "../Components/Images/4444.png"
+import dognot from "../Components/Images/Untitled design (2).png"
+import str from "../Components/Images/Untitled design (3).png"
+import str1 from "../Components/Images/Untitled design (4).png"
+import str2 from "../Components/Images/Untitled design (5).png"
 
 const RevenueReportComponent = () => {
   const boxes = [
-    { number: "UGX 1,500,000", heading: 'Expected Revenue', color: 'bg-danger' },
+    { number: "UGX 1,500,000", heading: 'Expected Revenue', color: 'bg-primary' },
     { number: "UGX 950,000", heading: 'Revenue Recieved', color: 'bg-success' },
-    { number: "UGX 550,000", heading: 'Total Pending', color: 'bg-primary' },
+    { number: "UGX 550,000", heading: 'Total Pending', color: ' bg-danger' },
 
   ];
   return (
@@ -18,8 +18,8 @@ const RevenueReportComponent = () => {
           {boxes.map((box, index) => (
             <div key={index} className="col-12 col-md-4">
               <div className={`box ${box.color} text-white text-center mb-4 py-4 rounded`}>
-                <div className="number" style={{ fontSize: '40px', fontWeight: "bolder" }}>{box.number}</div>
-                <div className="heading mt-3" style={{ fontSize: '20px', fontWeight: "bolder" }}>{box.heading}</div>
+                <div className="number" style={{ fontSize: '33px', fontWeight: "bolder" }}>{box.number}</div>
+                <div className="heading mt-3" style={{ fontSize: '17px', fontWeight: "600" }}>{box.heading}</div>
               </div>
             </div>
           ))}
@@ -89,7 +89,7 @@ const RevenueReportComponent = () => {
               </div>
 
               <div className=" d-flex justify-content-center mt-4">
-                <img src={str1} className=' img-fluid' alt='' style={{ marginLeft: "-25px" }}></img>
+                <img src={str1} className=' img-fluid' alt='' ></img>
 
               </div>
             </div>
@@ -111,8 +111,8 @@ const RevenueReportComponent = () => {
                 </div>
               </div>
 
-              <div className=" d-flex justify-content-center mt-5">
-                <img src={str2} className='img-fluid' alt='' style={{ marginLeft: "-25px" }}></img>
+              <div className=" d-flex justify-content-center mt-4">
+                <img src={str2} className='img-fluid' alt='' ></img>
 
               </div>
             </div>

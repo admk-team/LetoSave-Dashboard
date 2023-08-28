@@ -88,14 +88,16 @@ const AddBankAccountNewPage = () => {
                         </IconButton>
 
                         <Typography variant="h6" noWrap component="div" className='d-none d-lg-block'>
-                        Dashboard
+                      Add Bank Account
                     </Typography>
 
 
                         <Stack spacing={4} direction="row" sx={{ color: 'action.active', marginLeft: 'auto' }}>
+                        <Link className="nav-link" to="/Support/Chart-Management">
                             <Badge color="secondary" badgeContent={0}>
                                 <MailIcon sx={{ fontSize: 23, color: '#FF7070' }} style={{ marginTop: "10px" }} />
                             </Badge>
+                            </Link>
                             <Link to="/Notification" >
                                 <Badge color="secondary" showZero>
                                     <NotificationsRoundedIcon sx={{ fontSize: 25, }} className='mt-2' />
@@ -103,8 +105,7 @@ const AddBankAccountNewPage = () => {
                             </Link>
                             <Badge color="secondary" showZero>
                                 <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                                <Link to="/Profile" className='ms-3' style={{ textDecoration: "none", color: "black" }}>Flexi Health<p className='Adin'>Admin</p></Link>
-                            </Badge>
+                                <Link to="/Profile" className='ms-3' style={{ textDecoration: "none", color: "black" }}><h6 className='admin-name'>Flexi Health</h6><p className='Adin'>Admin</p></Link>                            </Badge>
 
                         </Stack>
                     </Toolbar>
