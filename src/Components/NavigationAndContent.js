@@ -496,24 +496,24 @@ const NavigationAndContent = () => {
             <ul className="nav nav-tabs d-flex border-0">
                 <li className="nav-item me-5 ms-md-4 ms-4">
                     <button className={`nav-link ${activeTab === 'profile' ? 'active active-link' : ''}`} onClick={() => setActiveTab('profile')}>
-                        <h5 className='fw-bold  text-dark'>Profile</h5>
+                        <h5 className={`fw-bold  ${activeTab === 'profile' || 'text-dark'}`}>Profile</h5>
                     </button>
                 </li>
                 <li className="nav-item me-5 ms-4">
                     <button className={`nav-link ${activeTab === 'password' ? 'active active-link' : ''}`} onClick={() => setActiveTab('password')}>
-                        <h5 className='fw-bold  text-dark'>Change Password</h5>
+                        <h5 className={`fw-bold  ${activeTab === 'password' || 'text-dark'}`}>Change Password</h5>
                     </button>
                 </li>
                 <li className="nav-item me-5 ms-4">
 
                     <button className={`nav-link ${activeTab === 'bank' ? 'active active-link' : ''}`} onClick={() => setActiveTab('bank')}>
-                        <h5 className='fw-bold text-dark'>Bank Accounts</h5>
+                        <h5 className={`fw-bold  ${activeTab === 'bank' || 'text-dark'}`}>Bank Accounts</h5>
 
                     </button>
                 </li>
                 <li className="nav-item me-5 ms-4">
                     <button className={`nav-link ${activeTab === 'wallet' ? 'active active-link' : ''}`} onClick={() => setActiveTab('wallet')}>
-                        <h5 className='fw-bold  text-dark'>Wallet</h5>
+                        <h5 className={`fw-bold  ${activeTab === 'wallet' || 'text-dark'}`}>Wallet</h5>
                     </button>
                 </li>
             </ul>
