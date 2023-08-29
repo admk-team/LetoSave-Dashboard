@@ -161,12 +161,40 @@ const PatientReportComponent = () => {
     };
 
     const options3 = {
-        series: [13, 15, 15],
+        plotOptions: {
+            pie: {
+              donut: {
+                labels: {
+                  show: true,
+                  total: {
+                    show: true,
+                    showAlways: true,
+                    label: 'Total Service',
+                    fontWeight: 600,
+                    fontSize: '1.1rem',
+                    color: '#898989',
+                    formatter: function () {
+                        return 785;
+                    }
+                  },
+                  value: {
+                    show: true,
+                    fontWeight: 600,
+                    fontSize: '3rem',
+                    offsetY: 32,
+                    color: '#494949'
+                  }
+                }
+              }
+            }
+        },
+        series: [30, 15, 30, 40],
+        labels: ['Double Room - c-section', 'Private Room - c-section', 'VIP - Normal', 'Private Room - Normal'],
         chart: {
             width: 365, // Adjust the width to make it smaller
             type: 'donut',
         },
-        colors: ['#00FF00', '#FF0000', '#0000FF'], // Green, Red, Blue
+        colors: ['#064FB8', '#F7282F', '#06B871', '#C5DAF8'], // Green, Red, Blue
         dataLabels: {
             enabled: false
         },

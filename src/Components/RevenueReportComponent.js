@@ -65,12 +65,40 @@ const RevenueReportComponent = () => {
 
   };
   const options3 = {
-    series: [13, 15, 15],
+    plotOptions: {
+      pie: {
+        donut: {
+          labels: {
+            show: true,
+            total: {
+              show: true,
+              showAlways: true,
+              label: 'Revenue Service',
+              fontWeight: 600,
+              fontSize: '1.1rem',
+              color: '#898989',
+              formatter: function () {
+                  return 'UGX155,000';
+              }
+            },
+            value: {
+              show: true,
+              fontWeight: 600,
+              fontSize: '1.5rem',
+              offsetY: 16,
+              color: '#494949'
+            }
+          }
+        }
+      }
+  },
+  series: [30, 15, 30, 40],
+  labels: ['Ward Type', 'Private Room - c-section', 'VIP - Normal', 'Delivery'],
     chart: {
       width: 365, // Adjust the width to make it smaller
       type: 'donut',
     },
-    colors: ['#00FF00', '#FF0000', '#0000FF'], // Green, Red, Blue
+    colors: ['#064FB8', '#F7282F', '#06B871', '#C5DAF8'], // Green, Red, Blue
     dataLabels: {
       enabled: false
     },
@@ -92,12 +120,40 @@ const RevenueReportComponent = () => {
     }
   };
   const options4 = {
-    series: [13, 15],
+    plotOptions: {
+      pie: {
+        donut: {
+          labels: {
+            show: true,
+            total: {
+              show: true,
+              showAlways: true,
+              label: 'Rooms',
+              fontWeight: 600,
+              fontSize: '1.1rem',
+              color: '#898989',
+              formatter: function () {
+                  return 'UGX175,500';
+              }
+            },
+            value: {
+              show: true,
+              fontWeight: 600,
+              fontSize: '1.5rem',
+              offsetY: 16,
+              color: '#494949'
+            }
+          }
+        }
+      }
+  },
+  series: [30, 15, 30],
+  labels: ['Private Room', 'VIP Room','General Room'],
     chart: {
       width: 365, // Adjust the width to make it smaller
       type: 'donut',
     },
-    colors: ['#00FF00', '#0000FF'], // Green,  Blue
+    colors: ['#064FB8', '#06B871', '#C5DAF8'], // Green, Red, Blue
     dataLabels: {
       enabled: false
     },

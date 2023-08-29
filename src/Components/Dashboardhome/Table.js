@@ -86,12 +86,40 @@ const options = {
     }
 };
 const options3 = {
-    series: [13, 15, 15],
+    plotOptions: {
+        pie: {
+          donut: {
+            labels: {
+              show: true,
+              total: {
+                show: true,
+                showAlways: true,
+                label: 'Total Patients',
+                fontWeight: 600,
+                fontSize: '1.1rem',
+                color: '#898989',
+                formatter: function () {
+                    return 785;
+                }
+              },
+              value: {
+                show: true,
+                fontWeight: 600,
+                fontSize: '3rem',
+                offsetY: 32,
+                color: '#494949'
+              }
+            }
+          }
+        }
+    },
+    series: [15, 15, 30, 40, 15],
+    labels: ['Fully paid', '75% paid', '50% paid', '25% paid', 'Just started'],
     chart: {
         width: 365, // Adjust the width to make it smaller
         type: 'donut',
     },
-    colors: ['#00FF00', '#FF0000', '#0000FF'], // Green, Red, Blue
+    colors: ['#32DB81', '#FCA20B', '#A63DCB', '#BAD5FC', '#F57A77'], // Green, Red, Blue
     dataLabels: {
         enabled: false
     },

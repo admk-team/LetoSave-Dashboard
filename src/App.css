@@ -1422,3 +1422,24 @@ h6 {
   font-size: 13px;
   color: #012970;
 }
+
+.apexcharts-legend {
+  height: fit-content !important;
+}
+
+.apexcharts-legend .apexcharts-legend-series {
+  text-align: start;
+  margin-bottom: 1rem !important;
+}
+
+.apexcharts-legend .apexcharts-legend-series .apexcharts-legend-marker {
+  border-radius: 3px !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.apexcharts-legend .apexcharts-legend-series .apexcharts-legend-text {
+  font-size: 1rem !important;
+  color: #767676 !important;
+  padding-left: 25px;
+}

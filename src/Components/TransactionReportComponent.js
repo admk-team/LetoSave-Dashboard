@@ -62,12 +62,40 @@ const TransactionReportComponent = () => {
     };
 
     const options3 = {
-        series: [13, 15, 15],
+        plotOptions: {
+            pie: {
+              donut: {
+                labels: {
+                  show: true,
+                  total: {
+                    show: true,
+                    showAlways: true,
+                    label: 'Revenue',
+                    fontWeight: 600,
+                    fontSize: '1.1rem',
+                    color: '#898989',
+                    formatter: function () {
+                        return 'UGX 150,000';
+                    }
+                  },
+                  value: {
+                    show: true,
+                    fontWeight: 600,
+                    fontSize: '1.5rem',
+                    offsetY: 16,
+                    color: '#494949'
+                  }
+                }
+              }
+            }
+        },
+        series: [30, 15, 30, 40],
+        labels: ['Double Room - c-section', 'Private Room - c-section', 'VIP - Normal', 'Private Room - Normal'],
         chart: {
             width: 365, // Adjust the width to make it smaller
             type: 'donut',
         },
-        colors: ['#00FF00', '#FF0000', '#0000FF'], // Green, Red, Blue
+        colors: ['#064FB8', '#F7282F', '#06B871', '#C5DAF8'], // Green, Red, Blue
         dataLabels: {
             enabled: false
         },
@@ -89,12 +117,40 @@ const TransactionReportComponent = () => {
         }
     };
     const options4 = {
-        series: [13, 15],
+        plotOptions: {
+            pie: {
+              donut: {
+                labels: {
+                  show: true,
+                  total: {
+                    show: true,
+                    showAlways: true,
+                    label: 'Transactions:',
+                    fontWeight: 600,
+                    fontSize: '1.1rem',
+                    color: '#898989',
+                    formatter: function () {
+                        return 'UGX 750,550';
+                    }
+                  },
+                  value: {
+                    show: true,
+                    fontWeight: 600,
+                    fontSize: '1.5rem',
+                    offsetY: 16,
+                    color: '#494949'
+                  }
+                }
+              }
+            }
+        },
+        series: [50, 50],
+        labels: ['Payment Pending', 'Payment Completed'],
         chart: {
             width: 365, // Adjust the width to make it smaller
             type: 'donut',
         },
-        colors: ['#00FF00', '#FFFF00'], // Green and Yellow
+        colors: ['#FFB800', '#06B871'], // Green and Yellow
         dataLabels: {
             enabled: false
         },
