@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import c1 from "../Images/Untitled design (no2) (1).png"
 import c2 from "../Images/Untitled design (no2) (2).png"
 
@@ -6,6 +6,7 @@ import str from "../Images/anChange.png"
 // import { Doughnut } from 'react-chartjs-2';
 import Img from "../Images/more.png"
 import { Avatar } from '@mui/material'
+import Chart from "react-apexcharts";
 // import { Chart, ArcElement } from 'chart.js'
 // Chart.register(ArcElement);
 
@@ -30,6 +31,88 @@ import { Avatar } from '@mui/material'
 //     }]
 // };
 
+const options = {
+    series: [{
+        data: [21, 22, 10, 28, 16, 21, 13, 30 , 55 , 53 , 21 , 23]
+    }],
+    chart: {
+        height: 350,
+        type: 'bar',
+        events: {
+            click: function(chart, w, e) {
+                // console.log(chart, w, e)
+            }
+        }
+    },
+    colors: ['#064FB8'], // Example colors
+    plotOptions: {
+        bar: {
+            columnWidth: '45%',
+            distributed: true,
+        }
+    },
+    dataLabels: {
+        enabled: false
+    },
+    legend: {
+        show: false
+    },
+    xaxis: {
+        show: false ,
+        categories: [
+            ['Jan'],
+            ['Feb'],
+            ['March'],
+            ['April'],
+            ['May'],
+            ['June'],
+            ['July'],
+            ['August'],
+            ['Sept'],
+            ['Oct'],
+            ['Nov'],
+            ['Dec'],
+        ],
+        labels: {
+            style: {
+                colors: ['#000000'], // Same as colors array
+                fontSize: '12px'
+            }
+        },
+       
+    },
+    yaxis: {
+        show: false  // Hide horizontal grid lines
+    }
+};
+const options3 = {
+    series: [13, 15, 15],
+    chart: {
+        width: 365, // Adjust the width to make it smaller
+        type: 'donut',
+    },
+    colors: ['#00FF00', '#FF0000', '#0000FF'], // Green, Red, Blue
+    dataLabels: {
+        enabled: false
+    },
+    responsive: [{
+        breakpoint: 280,
+        options: {
+            chart: {
+                width: 150 // Adjust the width for smaller screens
+            },
+            legend: {
+                show: false
+            },
+            
+        }
+    }],
+    legend: {
+        position: 'right',
+        offsetY: 0,
+        height: 130,
+    }
+};
 const Table = () => {
 
     return (
@@ -50,10 +133,22 @@ const Table = () => {
                             </div>
                             <div className="card-body">
                                 <table className="table table-bordered text-center">
-                                    <img src={c1} className='img-fluid' alt='' ></img>
+                                    {/* <img src={c1} className='img-fluid' alt='' ></img> */}
                                     {/* <Doughnut
                                         data={data}
                                     /> */}
+                                     <div className="app">
+                                <div className="row">
+                                    <div className="mixed-chart">
+                                        <Chart
+                                            options={options3}
+                                            series={options3.series}
+                                            type="donut"
+                                            height={options3.chart.width}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
                                 </table>
                             </div>
                         </div>
@@ -73,7 +168,18 @@ const Table = () => {
                             </div>
                             <div className="card-body">
                                 <table className="table table-bordered text-center">
-                                    <img src={c2} className='img-fluid' alt='' ></img>
+                                <div className="app">
+                                <div className="row">
+                                    <div className="mixed-chart">
+                                        <Chart
+                                            options={options}
+                                            series={options.series}
+                                            type="bar"
+                                            height={options.chart.height}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
                                 </table>
                             </div>
                         </div>
