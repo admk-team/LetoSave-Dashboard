@@ -5,7 +5,7 @@ import c2 from "../Images/Untitled design (no2) (2).png"
 import str from "../Images/anChange.png"
 // import { Doughnut } from 'react-chartjs-2';
 import Img from "../Images/more.png"
-import { Avatar } from '@mui/material'
+import { Avatar, ClickAwayListener } from '@mui/material'
 import Chart from "react-apexcharts";
 // import { Chart, ArcElement } from 'chart.js'
 // Chart.register(ArcElement);
@@ -127,7 +127,8 @@ const options3 = {
         breakpoint: 480,
         options: {
             chart: {
-                width: 330 // Adjust the width for smaller screens
+                width: "100%", // Adjust the width for smaller screens
+                
             },
             legend: {
                

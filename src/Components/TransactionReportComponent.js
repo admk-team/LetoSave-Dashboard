@@ -103,7 +103,7 @@ const TransactionReportComponent = () => {
             breakpoint: 430,
             options: {
                 chart: {
-                    width: 340,// Adjust the width for smaller screens
+                    width: "100%",// Adjust the width for smaller screens
                     height: 500
                 },
                 legend: {
@@ -161,7 +161,7 @@ const TransactionReportComponent = () => {
             breakpoint: 430,
             options: {
                 chart: {
-                    width: 340,// Adjust the width for smaller screens
+                    width: "100%",// Adjust the width for smaller screens
                     height: 500
                 },
                 legend: {
