@@ -1443,3 +1443,6 @@ h6 {
   color: #767676 !important;
   padding-left: 25px;
 }
+.apexcharts-menu-icon {
+  display: none !important;
+}

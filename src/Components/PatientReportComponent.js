@@ -5,6 +5,7 @@ import str from "../Components/Images/Untitled design (333).png"
 import str1 from "../Components/Images/Untitled design (444).png"
 import str2 from "../Components/Images/Untitled design (555).png"
 import Chart from "react-apexcharts";
+import '../../src/App.css';
 
 const PatientReportComponent = () => {
 
