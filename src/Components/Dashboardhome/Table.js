@@ -124,14 +124,24 @@ const options3 = {
         enabled: false
     },
     responsive: [{
-        breakpoint: 280,
+        breakpoint: 480,
         options: {
             chart: {
-                width: 150 // Adjust the width for smaller screens
+                width: 330 // Adjust the width for smaller screens
             },
             legend: {
-                show: false
+               
+                position: 'bottom',
+                offsetY: 0,
+                height: 130,
             },
+
+            // legend: {
+            //     position: 'right',
+            //     offsetY: 0,
+            //     height: 130,
+               
+            // }
             
         }
     }],
@@ -139,6 +149,7 @@ const options3 = {
         position: 'right',
         offsetY: 0,
         height: 130,
+       
     }
 };
 const Table = () => {
