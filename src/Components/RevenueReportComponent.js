@@ -106,7 +106,7 @@ const RevenueReportComponent = () => {
       breakpoint: 430,
       options: {
         chart: {
-          width: 350 // Adjust the width for smaller screens
+          width: 330 // Adjust the width for smaller screens
         },
         legend: {
           show: false
@@ -141,7 +141,8 @@ const RevenueReportComponent = () => {
               fontWeight: 600,
               fontSize: '1.5rem',
               offsetY: 16,
-              color: '#494949'
+              color: '#494949',
+             
             }
           }
         }
@@ -161,18 +162,14 @@ const RevenueReportComponent = () => {
       breakpoint: 430,
       options: {
         chart: {
-          width: 350 // Adjust the width for smaller screens
+          width: 330 // Adjust the width for smaller screens
         },
         legend: {
           show: false
-        }
+        },
       }
     }],
-    legend: {
-      position: 'right',
-      offsetY: 0,
-      height: 130,
-    }
+   
   };
   const option5 = {
     series: [{
