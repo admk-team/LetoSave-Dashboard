@@ -8,13 +8,13 @@ import Chart from "react-apexcharts";
 const TransactionReportComponent = () => {
     const options = {
         series: [{
-            data: [21, 22, 10, 28, 16, 21, 13, 30 , 55 , 53 , 21 , 23]
+            data: [21, 22, 10, 28, 16, 21, 13, 30, 55, 53, 21, 23]
         }],
         chart: {
             height: 350,
             type: 'bar',
             events: {
-                click: function(chart, w, e) {
+                click: function (chart, w, e) {
                     // console.log(chart, w, e)
                 }
             }
@@ -33,7 +33,7 @@ const TransactionReportComponent = () => {
             show: false
         },
         xaxis: {
-            show: false ,
+            show: false,
             categories: [
                 ['Jan'],
                 ['Feb'],
@@ -54,7 +54,7 @@ const TransactionReportComponent = () => {
                     fontSize: '12px'
                 }
             },
-           
+
         },
         yaxis: {
             show: false  // Hide horizontal grid lines
@@ -64,29 +64,29 @@ const TransactionReportComponent = () => {
     const options3 = {
         plotOptions: {
             pie: {
-              donut: {
-                labels: {
-                  show: true,
-                  total: {
-                    show: true,
-                    showAlways: true,
-                    label: 'Revenue',
-                    fontWeight: 600,
-                    fontSize: '1.1rem',
-                    color: '#898989',
-                    formatter: function () {
-                        return 'UGX 150,000';
+                donut: {
+                    labels: {
+                        show: true,
+                        total: {
+                            show: true,
+                            showAlways: true,
+                            label: 'Revenue',
+                            fontWeight: 600,
+                            fontSize: '1.1rem',
+                            color: '#898989',
+                            formatter: function () {
+                                return 'UGX 150,000';
+                            }
+                        },
+                        value: {
+                            show: true,
+                            fontWeight: 600,
+                            fontSize: '1.5rem',
+                            offsetY: 16,
+                            color: '#494949'
+                        }
                     }
-                  },
-                  value: {
-                    show: true,
-                    fontWeight: 600,
-                    fontSize: '1.5rem',
-                    offsetY: 16,
-                    color: '#494949'
-                  }
                 }
-              }
             }
         },
         series: [30, 15, 30, 40],
@@ -100,10 +100,10 @@ const TransactionReportComponent = () => {
             enabled: false
         },
         responsive: [{
-            breakpoint: 280,
+            breakpoint: 430,
             options: {
                 chart: {
-                    width: 150 // Adjust the width for smaller screens
+                    width: 350 // Adjust the width for smaller screens
                 },
                 legend: {
                     show: false
@@ -119,29 +119,29 @@ const TransactionReportComponent = () => {
     const options4 = {
         plotOptions: {
             pie: {
-              donut: {
-                labels: {
-                  show: true,
-                  total: {
-                    show: true,
-                    showAlways: true,
-                    label: 'Transactions:',
-                    fontWeight: 600,
-                    fontSize: '1.1rem',
-                    color: '#898989',
-                    formatter: function () {
-                        return 'UGX 750,550';
+                donut: {
+                    labels: {
+                        show: true,
+                        total: {
+                            show: true,
+                            showAlways: true,
+                            label: 'Transactions:',
+                            fontWeight: 600,
+                            fontSize: '1.1rem',
+                            color: '#898989',
+                            formatter: function () {
+                                return 'UGX 750,550';
+                            }
+                        },
+                        value: {
+                            show: true,
+                            fontWeight: 600,
+                            fontSize: '1.5rem',
+                            offsetY: 16,
+                            color: '#494949'
+                        }
                     }
-                  },
-                  value: {
-                    show: true,
-                    fontWeight: 600,
-                    fontSize: '1.5rem',
-                    offsetY: 16,
-                    color: '#494949'
-                  }
                 }
-              }
             }
         },
         series: [50, 50],
@@ -155,10 +155,10 @@ const TransactionReportComponent = () => {
             enabled: false
         },
         responsive: [{
-            breakpoint: 280,
+            breakpoint: 430,
             options: {
                 chart: {
-                    width: 150 // Adjust the width for smaller screens
+                    width:350 // Adjust the width for smaller screens
                 },
                 legend: {
                     show: false
@@ -172,35 +172,35 @@ const TransactionReportComponent = () => {
         }
     };
 
-    const options5={
+    const options5 = {
         series: [{
             name: "transcation volums",
-            data: [0, 2, 4, 6, 8,10]
+            data: [0, 2, 4, 6, 8, 10]
         }],
-          chart: {
-          height: 350,
-          type: 'line',
-          zoom: {
-            enabled: false
-          }
+        chart: {
+            height: 350,
+            type: 'line',
+            zoom: {
+                enabled: false
+            }
         },
         markers: {
             size: [4, 7]
         },
         stroke: {
-          curve: 'smooth'
+            curve: 'smooth'
         },
         grid: {
-          row: {
-            colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
-            opacity: 0.5
-          },
+            row: {
+                colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                opacity: 0.5
+            },
         },
         xaxis: {
-          categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Frid', 'Sat'],
+            categories: ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Frid', 'Sat'],
         }
     }
-    
+
     return (
         <>
             <div className="container-fluid p-4 p-md-5" style={{ marginTop: "30px" }}>
@@ -219,23 +219,25 @@ const TransactionReportComponent = () => {
                                 </div>
                             </div>
                             <div className="card-body">
-                            <table className="table table-bordered text-center mt-4">
-                                {/* <img src={dognot} className=' img-fluid ' alt='' ></img> */}
-                                <div className="app">
-                                <div className="row">
-                                    <div className="mixed-chart">
-                                        <Chart
-                                            options={options5}
-                                            series={options5.series}
-                                            type="line"
-                                            height={options5.chart.height}
-                                            stroke={options5.stroke}
-                                        />
-                                    </div>
+                                <div className="table-container" style={{ height: '400px' }}>
+                                    <table className="table table-bordered text-center mt-4">
+                                        {/* <img src={dognot} className=' img-fluid ' alt='' ></img> */}
+                                        <div className="app">
+                                            <div className="row">
+                                                <div className="mixed-chart">
+                                                    <Chart
+                                                        options={options5}
+                                                        series={options5.series}
+                                                        type="line"
+                                                        height={options5.chart.height}
+                                                        stroke={options5.stroke}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </table>
                                 </div>
                             </div>
-                            </table>
-                        </div>
 
                         </div>
                     </div>
@@ -256,25 +258,27 @@ const TransactionReportComponent = () => {
                                 </div>
                             </div>
 
-                            <div className=" d-flex justify-content-center mt-4">
+                            <div className=" d-flex justify-content-center">
                                 {/* <img src={str} className=' img-fluid' alt=''></img> */}
                                 <div className="card-body">
-                            <table className="table table-bordered text-center mt-4">
-                                {/* <img src={dognot} className=' img-fluid ' alt='' ></img> */}
-                                <div className="app">
-                                <div className="row">
-                                    <div className="mixed-chart">
-                                        <Chart
-                                            options={options}
-                                            series={options.series}
-                                            type="bar"
-                                            height={options.chart.height}
-                                        />
+                                    <div className="table-container" style={{ height: '400px' }}>
+                                        <table className="table table-bordered text-center mt-4">
+                                            {/* <img src={dognot} className=' img-fluid ' alt='' ></img> */}
+                                            <div className="app">
+                                                <div className="row">
+                                                    <div className="mixed-chart">
+                                                        <Chart
+                                                            options={options}
+                                                            series={options.series}
+                                                            type="bar"
+                                                            height={options.chart.height}
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </table>
                                     </div>
                                 </div>
-                            </div>
-                            </table>
-                        </div>
 
                             </div>
                         </div>
@@ -294,23 +298,25 @@ const TransactionReportComponent = () => {
                                 </div>
                             </div>
                             <div className="card-body">
-                            <table className="table table-bordered text-center mt-4">
-                                                                {/* <img src={str1} className=' img-fluid' alt='' ></img> */}
+                                <div className="table-container" style={{ height: '400px' }}>
+                                    <table className="table table-bordered text-center mt-4">
+                                        {/* <img src={str1} className=' img-fluid' alt='' ></img> */}
 
-                                <div className="app">
-                                <div className="row">
-                                    <div className="mixed-chart">
-                                        <Chart
-                                            options={options3}
-                                            series={options3.series}
-                                            type="donut"
-                                            height={options3.chart.width}
-                                        />
-                                    </div>
+                                        <div className="app">
+                                            <div className="row">
+                                                <div className="mixed-chart">
+                                                    <Chart
+                                                        options={options3}
+                                                        series={options3.series}
+                                                        type="donut"
+                                                        height={options3.chart.width}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </table>
                                 </div>
                             </div>
-                            </table>
-                        </div>
                         </div>
                     </div>
                     <div className="col-md-6">
@@ -324,24 +330,26 @@ const TransactionReportComponent = () => {
                                 </div>
                             </div>
                             <div className="card-body">
-                            <table className="table table-bordered text-center mt-4">
-                            {/* <img src={str2} className='img-fluid' alt='' ></img> */}
+                                <div className="table-container" style={{ height: '400px' }}>
+                                    <table className="table table-bordered text-center mt-4">
+                                        {/* <img src={str2} className='img-fluid' alt='' ></img> */}
 
-                                <div className="app">
-                                <div className="row">
-                                    <div className="mixed-chart">
-                                        <Chart
-                                            options={options4}
-                                            series={options4.series}
-                                            type="donut"
-                                            height={options4.chart.width}
-                                        />
-                                    </div>
+                                        <div className="app">
+                                            <div className="row">
+                                                <div className="mixed-chart">
+                                                    <Chart
+                                                        options={options4}
+                                                        series={options4.series}
+                                                        type="donut"
+                                                        height={options4.chart.width}
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </table>
                                 </div>
                             </div>
-                            </table>
-                        </div>
-                          
+
                         </div>
                     </div>
                 </div>
@@ -354,7 +362,7 @@ const TransactionReportComponent = () => {
                                     <label className="form-check-label mt-1" for="invalidCheck" >
                                         Patient Name
                                     </label></th>
-                               
+
                                 <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Transaction Date</th>
                                 <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Service</th>
                                 <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Transaction ID</th>
@@ -371,7 +379,7 @@ const TransactionReportComponent = () => {
                                         Alexa Cave
                                     </label>
                                 </th>
-                               
+
                                 <td className='pt-3'>26/02/2023 | 12:42 PM</td>
                                 <td className='pt-3'>Double Room-Normal</td>
                                 <td className='pt-3'>303963058</td>
@@ -386,7 +394,7 @@ const TransactionReportComponent = () => {
                                         Alexa Cave
                                     </label>
                                 </th>
-                               
+
                                 <td className='pt-3'>26/02/2023 | 12:42 PM</td>
                                 <td className='pt-3'>Double Room-Normal</td>
                                 <td className='pt-3'>303963058</td>
@@ -401,7 +409,7 @@ const TransactionReportComponent = () => {
                                         Alexa Cave
                                     </label>
                                 </th>
-                               
+
                                 <td className='pt-3'>26/02/2023 | 12:42 PM</td>
                                 <td className='pt-3'>Double Room-Normal</td>
                                 <td className='pt-3'>303963058</td>
