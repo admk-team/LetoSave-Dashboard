@@ -1,12 +1,22 @@
 import React from 'react'
 import { Badge, Button, Col, Form, Row } from 'react-bootstrap'
 import filter from "../Components/Assets/Icons/filter.png"
-import pic from "../Components/Assets/Icons/pic.png"
-import pic1 from "../Components/Images/detail.png"
+import Pic from "../Components/Assets/Icons/pic.png"
+import Pic2 from "../Components/Assets/Icons/Group 415.png"
+import Pic3 from "../Components/Images/cros.png"
+import Pic1 from "../Components/Images/mess.png"
+import no1 from '../Components/Assets/Icons/calendar.png'
+import no2 from '../Components/Assets/Icons/telephone.png'
+import no3 from '../Components/Assets/Icons/gender.png'
+import no4 from '../Components/Assets/Icons/flat.png'
+import no5 from '../Components/Assets/Icons/surface1.png'
 
-import ni1 from "../Components/Images/cros.png"
-import ni2 from "../Components/Images/mess.png"
-import ni3 from "../Components/Assets/Icons/Group 415.png"
+
+
+
+
+
+
 
 
 
@@ -34,64 +44,76 @@ const SinglePatientDetail = () => {
                         </Row>
                     </Form>
                 </div>
-                {/* <div className='mt-5 ms-3 d-flex'>
-                    <div className='ms-3 me-4'>
-                        <img src={pic} alt='' className='img-fluid'></img>
-                    </div>
-                    <div>
-                        <img src={pic1} alt='' className='img-fluid'></img>
-                    </div>
-                </div> */}
 
-                <div>
-                    <div class="row mt-5  d-none d-md-flex">
 
-                        <div class="col-md-12 d-flex ">
-                            <div class="ms-4 me-4">
-                                <img src={pic} alt="" class="img-fluid" />
-                            </div>
-                            <div>
-                                <img src={pic1} alt="" class="img-fluid" />
+                <div className="row mt-4 ">
+                    <div className='col-12 col-md-2'>
+                        <img src={Pic} style={{ width: '170px', height: '170px' }} alt=''></img>
+                    </div>
+
+                    <div className="col-12 col-md-5">
+                        <div className='d-flex'>
+                            <h2 className='ms-3 fw-bold mt-2'>Cive Slauw</h2>
+                            <p className='pt-1'><span class="badge bg-success p-2 mt-2 ms-3">APPROVED</span></p>
+                            <div className='d-block d-md-none'>
+                                <img src={Pic1} className='mt-2 me-2 ' alt=''></img>
+                                <img src={Pic2} className='mt-2 me-2' alt=''></img>
+                                <img src={Pic3} className='mt-2' alt=''></img>
                             </div>
                         </div>
-                    </div>
-                    <div class="row mt-5 d-md-none">
-
-                        <div class="col-10 offset-1 d-flex " />
-                        <div class="mb-3">
-                            <img src={pic} alt="" class="img-fluid" />
+                        <div className='d-flex pt-3'>
+                            <img src={no1} className='no1pic' style={{ marginLeft: "19px" }} alt=''></img>
+                            <h5 className=' date-of-birth' style={{ marginLeft: '12px', marginBottom: '5px' }}>Date of birth</h5>
                         </div>
-                        <div>
-                            <img src={pic1} alt="" class="img-fluid" />
+                        <div className='border-bottom pb-3'>
+                            <h5 className='dateof fw-semibold' style={{ marginLeft: '52px' }}>15 Apr, 1982</h5>
+                        </div>
+                        <div className='d-flex pt-3'>
+                            <img src={no2} className='no1pic' style={{ marginLeft: "19px" }} alt=''></img>
+                            <h5 className=' date-of-birth' style={{ marginLeft: '12px', marginBottom: '5px' }}>Phone number</h5>
+                        </div>
+                        <div className='border-bottom pb-3'>
+                            <h5 className='dateof fw-semibold' style={{ marginLeft: '52px' }}>+91 987 345 3214</h5>
+                        </div>
+                        <div className='d-flex pt-3'>
+                            <img src={no1} className='no1pic' style={{ marginLeft: "19px" }} alt=''></img>
+                            <h5 className=' date-of-birth' style={{ marginLeft: '12px', marginBottom: '5px' }}>Expected delivery date</h5>
+                        </div>
+                        <div className='border-bottom pb-3'>
+                            <h5 className='dateof fw-semibold' style={{ marginLeft: '52px' }}>15 March, 2024</h5>
+                        </div>
+                    </div> 
+                    <div className="col-12 col-md-5">
+                        <div className='d-none d-md-block'>
+                            <img src={Pic1} className='mt-2 pt-1 me-2 ps-5 ms-5' alt=''></img>
+                            <img src={Pic2} className='mt-2 me-2' alt=''></img>
+                            <img src={Pic3} className='mt-2' alt=''></img>
+                        </div>
+                        <div className='d-flex' style={{ paddingTop: "24px" }}>
+                            <img src={no3} className='no1pic' style={{ marginLeft: "19px" }} alt=''></img>
+                            <h5 className=' date-of-birth' style={{ marginLeft: '12px', marginBottom: '5px' }}>Child's Gender</h5>
+                        </div>
+                        <div className='border-bottom pb-3'>
+                            <h5 className='dateof fw-semibold' style={{ marginLeft: '52px' }}>Male</h5>
+                        </div>
+                        <div className='d-flex pt-3'>
+                            <img src={no4} className='no1pic' style={{ marginLeft: "19px" }} alt=''></img>
+                            <h5 className=' date-of-birth' style={{ marginLeft: '12px', marginBottom: '5px' }}>Services:</h5>
+                        </div>
+                        <div className='border-bottom pb-3'>
+                            <h5 className='dateof fw-semibold' style={{ marginLeft: '52px' }}>Normal</h5>
+                        </div>
+                        <div className='d-flex pt-3'>
+                            <img src={no5} className='no1pic' style={{ marginLeft: "19px" }} alt=''></img>
+                            <h5 className=' date-of-birth' style={{ marginLeft: '12px', marginBottom: '5px' }}>Total Cost of Services:</h5>
+                        </div>
+                        <div className='border-bottom pb-3'>
+                            <h5 className='dateof fw-semibold' style={{ marginLeft: '52px' }}>UGX 852,000</h5>
                         </div>
                     </div>
                 </div>
 
-
-                {/* <div className='mt-5 ms-3 '>
-                    <div className="row">
-                        <div className="col-md-6">
-                            <div className="d-flex ">
-                                <img src={pic} alt=""  />
-                                <h2 className="fw-bold">Cive Slauw</h2>
-                                <p className='bg-success' style={{padding:'3px'}}>APPROVED</p>
-                            </div>
-                            
-                        </div>
-                        <div className="col-md-6">
-                            <div className="d-flex justify-content-center">
-                                <img src={ni2} alt="" />
-                                <img src={ni3} alt="" />
-                                <img src={ni1} alt="" />
-                            </div>
-                        </div>
-                    </div>
-
-                </div> */}
-
-
-
-                <h4 className='fw-semibold mt-5'>All Transactions</h4>
+                <h4 className='fw-semibold mt-4'>All Transactions</h4>
                 <div className='table-responsive'>
                     <table className="table table-hover mt-2">
                         <thead>
@@ -159,7 +181,7 @@ const SinglePatientDetail = () => {
                         </tbody>
                     </table>
                 </div>
-            </div >
+            </div>
         </>
     )
 }
