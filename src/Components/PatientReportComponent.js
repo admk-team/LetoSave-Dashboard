@@ -192,7 +192,7 @@ const PatientReportComponent = () => {
         series: [30, 15, 30, 40],
         labels: ['Double Room - c-section', 'Private Room - c-section', 'VIP - Normal', 'Private Room - Normal'],
         chart: {
-            width: 365, // Adjust the width to make it smaller
+            height: 350, // Adjust the width to make it smaller
             type: 'donut',
         },
         colors: ['#064FB8', '#F7282F', '#06B871', '#C5DAF8'], // Green, Red, Blue

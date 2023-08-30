@@ -193,7 +193,7 @@ const RevenueReportComponent = () => {
     chart: {
       type: 'bar',
       height: 350,
-      width: 600,
+      width: "100%",
       stacked: true,
       stackType: '100%'
     },
