@@ -14,7 +14,7 @@ const PatientManagementPage = () => {
 
     return (
         <>
-            <div className="container-fluid " style={{ marginTop: "55px" }}>
+            <div className="container-fluid " style={{ marginTop: "75px" }}>
                 <div className='d-flex justify-content-end'>
                     <Form >
                         <Row>
