@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 const AddBankAccount = () => {
     return (
         <>
-            <div className="container " style={{ marginTop: "70px" }}>
+            <div className="container " style={{ marginTop: "90px" }}>
                 <Form style={{ maxWidth: "600px", margin: "0 auto" }}>
                     <Form.Group className="mb-4" >
                         <Form.Label>Account Holder's Name</Form.Label>
