@@ -6,7 +6,6 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import "../App.css"
 import Upload from "../Components/Images/upload.png"
-import WithdrawModal from '../Components/WithdrawModal';
 import OTPModal from '../Components/OTPModal';
 
 
@@ -47,11 +46,11 @@ const RegistrationPage = () => {
                                     <div className="col-md-6 ">
                                         <div className="card-body text-black ">
                                             <h2 className="mb-2 d-flex justify-content-center fw-bold " style={{ color: "#064FB8" }}>Get Started</h2>
-                                            <p className='d-flex justify-content-center'>Already Have Account?
+                                            <div className='d-flex justify-content-center'>Already Have Account?
                                                 <div className='ms-1'>
                                                     <a href='!#' className='text-decoration-none fw-medium' style={{ color: "#064FB8" }}>Sign In</a>
                                                 </div>
-                                            </p>
+                                            </div>
                                             <div className="row">
                                                 <div className=" mb-4">
                                                     <div className="form-outline">
@@ -116,7 +115,7 @@ const RegistrationPage = () => {
                                                     <p className="upload-text mb-1">Click to upload or drag and drop</p>
                                                     <p className=" text-dark mb-3 " style={{ color: 'black' }}>Maximum file size 50 MB</p>
 
-                                                    <label for="fileInput" className="upload-label"></label>
+                                                    <label htmlFor="fileInput" className="upload-label"></label>
                                                 </div>
 
                                                 <label>Hospital License</label>
@@ -129,7 +128,7 @@ const RegistrationPage = () => {
                                                     <p className=" text-dark mb-3" style={{ color: 'black' }}>Maximum file size 50 MB</p>
 
                                                     <input type="file" id="fileInput" className="custom-file-input" />
-                                                    <label for="fileInput" class="upload-label"></label>
+                                                    <label htmlFor="fileInput" className="upload-label"></label>
                                                 </div>
                                             </div>
 

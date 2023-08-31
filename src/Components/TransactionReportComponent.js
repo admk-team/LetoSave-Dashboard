@@ -1,8 +1,5 @@
-import React, { useState } from 'react';
-import dognot from "../Components/Images/Untitled design (22).png"
-import str from "../Components/Images/Untitled design (33).png"
-import str1 from "../Components/Images/Untitled design (44).png"
-import str2 from "../Components/Images/Untitled design (55).png"
+import React from 'react';
+
 import Chart from "react-apexcharts";
 
 const TransactionReportComponent = () => {
@@ -94,6 +91,7 @@ const TransactionReportComponent = () => {
         chart: {
             width: 365, // Adjust the width to make it smaller
             type: 'donut',
+            height: 900,
         },
         colors: ['#064FB8', '#F7282F', '#06B871', '#C5DAF8'], // Green, Red, Blue
         dataLabels: {
@@ -219,14 +217,14 @@ const TransactionReportComponent = () => {
                                 </div>
                                 <div className="d-flex align-items-center">
                                     <select id="inputState" className="form-select">
-                                        <option selected>Weekly</option>
+                                        <option>Weekly</option>
                                         <option>...</option>
                                     </select>
                                 </div>
                             </div>
                             <div className="card-body">
                                 <div className="table-container" style={{ height: '400px' }}>
-                                    <table className="table table-bordered text-center mt-4">
+                                    <div className="table table-bordered text-center mt-4">
                                         {/* <img src={dognot} className=' img-fluid ' alt='' ></img> */}
                                         <div className="app">
                                             <div className="row">
@@ -241,7 +239,7 @@ const TransactionReportComponent = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </table>
+                                    </div>
                                 </div>
                             </div>
 
@@ -257,7 +255,7 @@ const TransactionReportComponent = () => {
                                 </div>
                                 <div className="d-flex align-items-center">
                                     <select id="inputState" className="form-select">
-                                        <option selected>Weekly</option>
+                                        <option>Weekly</option>
                                         <option>...</option>
                                     </select>
 
@@ -268,7 +266,7 @@ const TransactionReportComponent = () => {
                                 {/* <img src={str} className=' img-fluid' alt=''></img> */}
                                 <div className="card-body">
                                     <div className="table-container" style={{ height: '400px' }}>
-                                        <table className="table table-bordered text-center mt-4">
+                                        <div className="table table-bordered text-center mt-4">
                                             {/* <img src={dognot} className=' img-fluid ' alt='' ></img> */}
                                             <div className="app">
                                                 <div className="row">
@@ -282,7 +280,7 @@ const TransactionReportComponent = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </table>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -305,7 +303,7 @@ const TransactionReportComponent = () => {
                             </div>
                             <div className="card-body">
                                 <div className="table-container" style={{ height: '400px' }}>
-                                    <table className="table table-bordered text-center mt-4">
+                                    <div className="table table-bordered text-center mt-4">
                                         {/* <img src={str1} className=' img-fluid' alt='' ></img> */}
 
                                         <div className="app">
@@ -320,7 +318,7 @@ const TransactionReportComponent = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -337,7 +335,7 @@ const TransactionReportComponent = () => {
                             </div>
                             <div className="card-body">
                                 <div className="table-container" style={{ height: '400px' }}>
-                                    <table className="table table-bordered text-center mt-4">
+                                    <div className="table table-bordered text-center mt-4">
                                         {/* <img src={str2} className='img-fluid' alt='' ></img> */}
 
                                         <div className="app">
@@ -352,7 +350,7 @@ const TransactionReportComponent = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </table>
+                                    </div>
                                 </div>
                             </div>
 
@@ -360,12 +358,12 @@ const TransactionReportComponent = () => {
                     </div>
                 </div>
                 <div className='table-responsive mt-3'>
-                    <table class="table table-hover text-center">
+                    <table className="table table-hover text-center">
                         <thead>
                             <tr>
                                 <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>
                                     <input className="form-check-input me-3 p-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1" for="invalidCheck" >
+                                    <label className="form-check-label mt-1" htmlFor="invalidCheck" >
                                         Patient Name
                                     </label></th>
 
@@ -381,7 +379,7 @@ const TransactionReportComponent = () => {
                         <tbody>
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         Alexa Cave
                                     </label>
                                 </th>
@@ -396,7 +394,7 @@ const TransactionReportComponent = () => {
                             </tr>
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         Alexa Cave
                                     </label>
                                 </th>
@@ -411,7 +409,7 @@ const TransactionReportComponent = () => {
                             </tr>
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         Alexa Cave
                                     </label>
                                 </th>

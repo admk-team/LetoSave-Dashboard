@@ -29,10 +29,14 @@ import RevenueReportComponent from '../Components/RevenueReportComponent';
 import LogoutModal from '../Components/LogoutModal';
 
 
+
 const drawerWidth = 280;
 const RevenueReportNewPage = () => {
     const [showLogoutModal, setShowLogoutModal] = useState(false);
     const [open, setOpen] = useState(window.innerWidth >= 960);
+    useEffect(() => {
+        document.title = "Revenue Page";
+    }, [])
     useEffect(() => {
         const handleResize = () => {
             setOpen(window.innerWidth >= 960);
@@ -83,15 +87,15 @@ const RevenueReportNewPage = () => {
                         </IconButton>
 
                         <Typography variant="h6" noWrap component="div" className='d-none d-lg-block'>
-                        Revenue Report
-                    </Typography>
+                            Revenue Report
+                        </Typography>
 
 
                         <Stack spacing={4} direction="row" sx={{ color: 'action.active', marginLeft: 'auto' }}>
-                        <Link className="nav-link" to="/Support/Chart-Management">
-                            <Badge color="secondary" badgeContent={0}>
-                                <MailIcon sx={{ fontSize: 23, color: '#FF7070' }} style={{ marginTop: "10px" }} />
-                            </Badge>
+                            <Link className="nav-link" to="/Support/Chart-Management">
+                                <Badge color="secondary" badgeContent={0}>
+                                    <MailIcon sx={{ fontSize: 23, color: '#FF7070' }} style={{ marginTop: "10px" }} />
+                                </Badge>
                             </Link>
                             <Link to="/Notification" >
                                 <Badge color="secondary" showZero>
@@ -156,27 +160,27 @@ const RevenueReportNewPage = () => {
                         <ListItem>
                             <img src={Customer} className='me-3' alt=''></img>
                             <Link className="nav-link" to="/service-Management">
-                            <ListItemText primary='Service Management' />
+                                <ListItemText primary='Service Management' />
                             </Link>
                         </ListItem>
                         <ListItem>
                             <img src={Layer} className='me-3' alt=''></img>
                             <Link className="nav-link" to="/Support/Chart-Management">
-                            <ListItemText primary='Support / Chart' />
+                                <ListItemText primary='Support / Chart' />
                             </Link>
                         </ListItem>
                         <ListItem>
                             <img src={report} className='me-3' alt=''></img>
                             <Link className="nav-link" to="/Reports-Management">
-                            <ListItemText primary='Reports' />
+                                <ListItemText primary='Reports' />
                             </Link>
                         </ListItem>
                         <ListItem className='cursor-pointer'>
-                        <img src={logout} className='me-3' alt=''></img>
-                        
-                            <ListItemText primary='Logout'  onClick={handleLogoutClick} />
-                       
-                    </ListItem>
+                            <img src={logout} className='me-3' alt=''></img>
+
+                            <ListItemText primary='Logout' onClick={handleLogoutClick} />
+
+                        </ListItem>
                         {/* ))} */}
 
                     </List>
@@ -185,8 +189,8 @@ const RevenueReportNewPage = () => {
                 </Drawer>
 
                 <main style={{ flexGrow: 1, marginLeft: open ? drawerWidth : 0, backgroundColor: 'wheate' }}>
-                   <RevenueReportComponent/>
-                   <LogoutModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm}/>
+                    <RevenueReportComponent />
+                    <LogoutModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm} />
                 </main>
             </div>
         </>

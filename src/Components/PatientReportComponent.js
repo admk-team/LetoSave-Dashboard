@@ -1,9 +1,5 @@
 
-import React, { useState } from 'react';
-import dognot from "../Components/Images/Untitled design (222).png"
-import str from "../Components/Images/Untitled design (333).png"
-import str1 from "../Components/Images/Untitled design (444).png"
-import str2 from "../Components/Images/Untitled design (555).png"
+import React from 'react';
 import Chart from "react-apexcharts";
 import '../../src/App.css';
 
@@ -203,11 +199,15 @@ const PatientReportComponent = () => {
             breakpoint: 430,
             options: {
                 chart: {
+                    height: 600,
                     width: "100%", // Adjust the width for smaller screens
                 },
                 legend: {
-                    show: false
+                    position: 'bottom',
+                    offsetY: 0,
+                    height: 130,
                 },
+               
 
             }
         }],
@@ -236,8 +236,8 @@ const PatientReportComponent = () => {
                             </div>
                             <div className="card-body">
                                 <div className="table-container" style={{ height: '400px' }}>
-                                    <table className="table table-bordered text-center mt-4">
-                                        {/* <img src={dognot} className=' img-fluid ' alt='' ></img> */}
+                                    <div className="table table-bordered text-center mt-4">
+
                                         <div className="app">
                                             <div className="row">
                                                 <div className="mixed-chart">
@@ -252,13 +252,13 @@ const PatientReportComponent = () => {
                                         </div>
 
 
-                                    </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-6">
-                        {/* Display the second table only on larger screens */}
+
                         <div className="card mb-4  border-0">
                             <div className="card-header d-flex justify-content-between align-items-center">
 
@@ -271,8 +271,8 @@ const PatientReportComponent = () => {
                             </div>
                             <div className="card-body">
                                 <div className="table-container" style={{ height: '400px' }}>
-                                    <table className="table table-bordered text-center mt-4">
-                                        {/* <img src={str} className='img-fluid' alt='' ></img> */}
+                                    <div className="table table-bordered text-center mt-4">
+
                                         <div className="app">
                                             <div className="row">
                                                 <div className="mixed-chart">
@@ -285,7 +285,7 @@ const PatientReportComponent = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -301,15 +301,15 @@ const PatientReportComponent = () => {
                                 </div>
                                 <div className="d-flex align-items-center">
                                     <select id="inputState" className="form-select">
-                                        <option selected>Months</option>
+                                        <option>Months</option>
                                         <option>...</option>
                                     </select>
                                 </div>
                             </div>
                             <div className="card-body">
                                 <div className="table-container" style={{ height: '400px' }}>
-                                    <table className="table table-bordered text-center mt-4">
-                                        {/* <img src={str1} className='img-fluid' alt='' ></img> */}
+                                    <div className="table table-bordered text-center mt-4">
+
                                         <div className="app">
                                             <div className="row">
                                                 <div className="mixed-chart">
@@ -322,13 +322,13 @@ const PatientReportComponent = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-6">
-                        {/* Display the second table only on larger screens */}
+
                         <div className="card mb-4  border-0">
                             <div className="card-header d-flex justify-content-between align-items-center">
 
@@ -337,15 +337,15 @@ const PatientReportComponent = () => {
                                 </div>
                                 <div className="d-flex align-items-center">
                                     <select id="inputState" className="form-select">
-                                        <option selected>Months</option>
+                                        <option >Months</option>
                                         <option>...</option>
                                     </select>
                                 </div>
                             </div>
                             <div className="card-body">
                                 <div className="table-container" style={{ height: '400px' }}>
-                                    <table className="table table-bordered text-center mt-4">
-                                        {/* <img src={str2} className='img-fluid' alt='' ></img> */}
+                                    <div className="table table-bordered text-center mt-4">
+
                                         <div className="app">
                                             <div className="row">
                                                 <div className="mixed-chart">
@@ -359,19 +359,19 @@ const PatientReportComponent = () => {
                                             </div>
                                         </div>
 
-                                    </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='table-responsive mt-3'>
-                    <table class="table table-hover text-center">
+                    <table className="table table-hover text-center">
                         <thead>
                             <tr>
                                 <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>
                                     <input className="form-check-input me-3 p-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1" for="invalidCheck" >
+                                    <label className="form-check-label mt-1" htmlFor="invalidCheck" >
                                         Patient Name
                                     </label></th>
                                 <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Registration Date</th>
@@ -387,7 +387,7 @@ const PatientReportComponent = () => {
                         <tbody>
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         Alexa Cave
                                     </label>
                                 </th>
@@ -401,7 +401,7 @@ const PatientReportComponent = () => {
                             </tr>
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         Alexa Cave
                                     </label>
                                 </th>
@@ -415,7 +415,7 @@ const PatientReportComponent = () => {
                             </tr>
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         Alexa Cave
                                     </label>
                                 </th>
@@ -429,7 +429,7 @@ const PatientReportComponent = () => {
                             </tr>
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         Alexa Cave
                                     </label>
                                 </th>

@@ -88,16 +88,16 @@ const PatientNew = () => {
                     </Typography>
 
                     <Stack spacing={4} direction="row" sx={{ color: 'action.active', marginLeft: 'auto' }}>
-                    <Link className="nav-link" to="/Support/Chart-Management">
-                        <Badge color="secondary" badgeContent={0}>
-                            <MailIcon sx={{ fontSize: 23, color: '#FF7070' }} style={{ marginTop: "10px" }} />
-                        </Badge>
+                        <Link className="nav-link" to="/Support/Chart-Management">
+                            <Badge color="secondary" badgeContent={0}>
+                                <MailIcon sx={{ fontSize: 23, color: '#FF7070' }} style={{ marginTop: "10px" }} />
+                            </Badge>
                         </Link>
                         <Link to="/Notification" >
-                                <Badge color="secondary" showZero>
-                                    <NotificationsRoundedIcon sx={{ fontSize: 25, }} className='mt-2' />
-                                </Badge>
-                            </Link>
+                            <Badge color="secondary" showZero>
+                                <NotificationsRoundedIcon sx={{ fontSize: 25, }} className='mt-2' />
+                            </Badge>
+                        </Link>
                         <Badge color="secondary" showZero>
                             <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
                             <Link to="/Profile" className='ms-3' style={{ textDecoration: "none", color: "black" }}><h6 className='admin-name'>Flexi Health</h6><p className='Adin'>Admin</p></Link>                        </Badge>
@@ -133,62 +133,62 @@ const PatientNew = () => {
                 </div>
                 <Divider />
                 <List >
-                        {/* {['Dashboard', 'Patient Management', 'Deposits Management', 'Service Management', 'Support / Chart', 'Reports', 'Logout'].map((text, index) => ( */}
-                        <ListItem>
-                            <img src={iconnoone} className='me-3' alt=''></img>
-                            <Link className="nav-link" to="/">
-                                <ListItemText primary='Dashboard' />
-                            </Link>
-                        </ListItem>
-                        <ListItem>
-                            <img src={Patient} className='me-3' alt=''></img>
-                            <Link className="nav-link" to="/patient-Management">
-                                <ListItemText primary='Patient Management' />
-                            </Link>
-                        </ListItem>
-
-                        <ListItem>
-                            <img src={Ellips} className='me-3' alt=''></img>
-                            <Link className="nav-link" to="/Deposite-Management">
-                                <ListItemText primary='Deposits Management' />
-                            </Link>
-                        </ListItem>
-                        <ListItem>
-                            <img src={Customer} className='me-3' alt=''></img>
-                            <Link className="nav-link" to="/service-Management">
-                            <ListItemText primary='Service Management' />
-                            </Link>
-                        </ListItem>
-                        <ListItem>
-                            <img src={Layer} className='me-3' alt=''></img>
-                            <Link className="nav-link" to="/Support/Chart-Management">
-                            <ListItemText primary='Support / Chart' />
-                            </Link>
-                        </ListItem>
-                        <ListItem>
-                            <img src={report} className='me-3' alt=''></img>
-                            <Link className="nav-link" to="/Reports-Management">
-                            <ListItemText primary='Reports' />
-                            </Link>
-                        </ListItem>
-                        <ListItem className='cursor-pointer'>
-                        <img src={logout} className='me-3' alt=''></img>
-                        
-                            <ListItemText primary='Logout'  onClick={handleLogoutClick} />
-                       
+                    {/* {['Dashboard', 'Patient Management', 'Deposits Management', 'Service Management', 'Support / Chart', 'Reports', 'Logout'].map((text, index) => ( */}
+                    <ListItem>
+                        <img src={iconnoone} className='me-3' alt=''></img>
+                        <Link className="nav-link" to="/">
+                            <ListItemText primary='Dashboard' />
+                        </Link>
                     </ListItem>
-                        {/* ))} */}
+                    <ListItem>
+                        <img src={Patient} className='me-3' alt=''></img>
+                        <Link className="nav-link" to="/patient-Management">
+                            <ListItemText primary='Patient Management' />
+                        </Link>
+                    </ListItem>
 
-                    </List>
+                    <ListItem>
+                        <img src={Ellips} className='me-3' alt=''></img>
+                        <Link className="nav-link" to="/Deposite-Management">
+                            <ListItemText primary='Deposits Management' />
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <img src={Customer} className='me-3' alt=''></img>
+                        <Link className="nav-link" to="/service-Management">
+                            <ListItemText primary='Service Management' />
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <img src={Layer} className='me-3' alt=''></img>
+                        <Link className="nav-link" to="/Support/Chart-Management">
+                            <ListItemText primary='Support / Chart' />
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <img src={report} className='me-3' alt=''></img>
+                        <Link className="nav-link" to="/Reports-Management">
+                            <ListItemText primary='Reports' />
+                        </Link>
+                    </ListItem>
+                    <ListItem className='cursor-pointer'>
+                        <img src={logout} className='me-3' alt=''></img>
+
+                        <ListItemText primary='Logout' onClick={handleLogoutClick} />
+
+                    </ListItem>
+                    {/* ))} */}
+
+                </List>
 
 
             </Drawer>
 
             <main style={{ flexGrow: 1, marginLeft: open ? drawerWidth : 0, backgroundColor: 'wheate' }}>
 
-            
-                <PatientReportComponent/>
-                <LogoutModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm}/>
+
+                <PatientReportComponent />
+                <LogoutModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm} />
             </main>
         </div>
     );

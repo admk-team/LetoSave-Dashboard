@@ -1,8 +1,5 @@
-import React, { useState } from 'react';
-import dognot from "../Components/Images/Untitled design (2).png"
-import str from "../Components/Images/Untitled design (3).png"
-import str1 from "../Components/Images/Untitled design (4).png"
-import str2 from "../Components/Images/Untitled design (5).png"
+import React from 'react';
+
 import Chart from "react-apexcharts";
 
 const RevenueReportComponent = () => {
@@ -295,7 +292,7 @@ const RevenueReportComponent = () => {
                 </div>
                 <div className="d-flex align-items-center">
                   <select id="inputState" className="form-select">
-                    <option selected>Weekly</option>
+                    <option>Weekly</option>
                     <option>...</option>
                   </select>
 
@@ -304,7 +301,7 @@ const RevenueReportComponent = () => {
 
               <div className="card-body">
                 <div className="table-container" style={{ height: '400px' }}>
-                  <table className="table table-bordered text-center mt-4">
+                  <div className="table table-bordered text-center mt-4">
                     {/* <img src={dognot} className='img-fluid' alt='' ></img> */}
 
                     <div className="app">
@@ -321,7 +318,7 @@ const RevenueReportComponent = () => {
                     </div>
 
 
-                  </table>
+                  </div>
                 </div>
               </div>
             </div>
@@ -336,7 +333,7 @@ const RevenueReportComponent = () => {
                 </div>
                 <div className="d-flex align-items-center">
                   <select id="inputState" className="form-select">
-                    <option selected>Weekly</option>
+                    <option>Weekly</option>
                     <option>...</option>
                   </select>
 
@@ -345,7 +342,7 @@ const RevenueReportComponent = () => {
 
               <div className="card-body">
                 <div className="table-container" style={{ height: '400px' }}>
-                  <table className="table table-bordered text-center mt-4">
+                  <div className="table table-bordered text-center mt-4">
                     {/* <img src={str} className=' img-fluid' alt=''></img> */}
 
                     <div className="app">
@@ -360,7 +357,7 @@ const RevenueReportComponent = () => {
                         </div>
                       </div>
                     </div>
-                  </table>
+                  </div>
                 </div>
               </div>
             </div>
@@ -378,7 +375,7 @@ const RevenueReportComponent = () => {
                 </div>
                 <div className="d-flex align-items-center">
                   <select id="inputState" className="form-select">
-                    <option selected>Weekly</option>
+                    <option>Weekly</option>
                     <option>...</option>
                   </select>
 
@@ -387,7 +384,7 @@ const RevenueReportComponent = () => {
 
               <div className="card-body">
                 <div className="table-container" style={{ height: '400px' }}>
-                  <table className="table table-bordered text-center mt-4">
+                  <div className="table table-bordered text-center mt-4">
                     {/* <img src={str1} className=' img-fluid' alt='' ></img> */}
                     <div className="app">
                       <div className="row">
@@ -402,7 +399,7 @@ const RevenueReportComponent = () => {
                         </div>
                       </div>
                     </div>
-                  </table>
+                  </div>
                 </div>
               </div>
             </div>
@@ -418,14 +415,14 @@ const RevenueReportComponent = () => {
                 <div className="d-flex align-items-center">
 
                   <select id="inputState" className="form-select">
-                    <option selected>Weekly</option>
+                    <option>Weekly</option>
                     <option>...</option>
                   </select>
                 </div>
               </div>
               <div className="card-body">
                 <div className="table-container" style={{ height: '400px' }}>
-                  <table className="table table-bordered text-center mt-4">
+                  <div className="table table-bordered text-center mt-4">
                     {/* <img src={str2} className='img-fluid' alt='' ></img> */}
 
 
@@ -441,7 +438,7 @@ const RevenueReportComponent = () => {
                         </div>
                       </div>
                     </div>
-                  </table>
+                  </div>
                 </div>
               </div>
             </div>

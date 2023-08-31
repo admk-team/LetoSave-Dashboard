@@ -1,45 +1,18 @@
-import React, { useState } from 'react';
-import c1 from "../Images/Untitled design (no2) (1).png"
-import c2 from "../Images/Untitled design (no2) (2).png"
-
-import str from "../Images/anChange.png"
-// import { Doughnut } from 'react-chartjs-2';
+import React from 'react';
 import Img from "../Images/more.png"
-import { Avatar, ClickAwayListener } from '@mui/material'
+import { Avatar } from '@mui/material'
 import Chart from "react-apexcharts";
-// import { Chart, ArcElement } from 'chart.js'
-// Chart.register(ArcElement);
 
-
-
-// const data = {
-//     labels: [
-//         'Red',
-//         'Blue',
-//         'Yellow',
-        
-//     ],
-//     datasets: [{
-//         label: 'My First Dataset',
-//         data: [300, 50, 100],
-//         backgroundColor: [
-//             'rgb(255, 99, 132)',
-//             'rgb(54, 162, 235)',
-//             'rgb(255, 205, 86)'
-//         ],
-//         hoverOffset: 4
-//     }]
-// };
 
 const options = {
     series: [{
-        data: [21, 22, 10, 28, 16, 21, 13, 30 , 55 , 53 , 21 , 23]
+        data: [21, 22, 10, 28, 16, 21, 13, 30, 55, 53, 21, 23]
     }],
     chart: {
         height: 350,
         type: 'bar',
         events: {
-            click: function(chart, w, e) {
+            click: function (chart, w, e) {
                 // console.log(chart, w, e)
             }
         }
@@ -58,7 +31,7 @@ const options = {
         show: false
     },
     xaxis: {
-        show: false ,
+        show: false,
         categories: [
             ['Jan'],
             ['Feb'],
@@ -79,7 +52,7 @@ const options = {
                 fontSize: '12px'
             }
         },
-       
+
     },
     yaxis: {
         show: false  // Hide horizontal grid lines
@@ -88,29 +61,29 @@ const options = {
 const options3 = {
     plotOptions: {
         pie: {
-          donut: {
-            labels: {
-              show: true,
-              total: {
-                show: true,
-                showAlways: true,
-                label: 'Total Patients',
-                fontWeight: 600,
-                fontSize: '1.1rem',
-                color: '#898989',
-                formatter: function () {
-                    return 785;
+            donut: {
+                labels: {
+                    show: true,
+                    total: {
+                        show: true,
+                        showAlways: true,
+                        label: 'Total Patients',
+                        fontWeight: 600,
+                        fontSize: '1.1rem',
+                        color: '#898989',
+                        formatter: function () {
+                            return 785;
+                        }
+                    },
+                    value: {
+                        show: true,
+                        fontWeight: 600,
+                        fontSize: '3rem',
+                        offsetY: 32,
+                        color: '#494949'
+                    }
                 }
-              },
-              value: {
-                show: true,
-                fontWeight: 600,
-                fontSize: '3rem',
-                offsetY: 32,
-                color: '#494949'
-              }
             }
-          }
         }
     },
     series: [15, 15, 30, 40, 15],
@@ -128,10 +101,10 @@ const options3 = {
         options: {
             chart: {
                 width: "100%", // Adjust the width for smaller screens
-                
+
             },
             legend: {
-               
+
                 position: 'bottom',
                 offsetY: 0,
                 height: 130,
@@ -141,16 +114,16 @@ const options3 = {
             //     position: 'right',
             //     offsetY: 0,
             //     height: 130,
-               
+
             // }
-            
+
         }
     }],
     legend: {
         position: 'right',
         offsetY: 0,
         height: 130,
-       
+
     }
 };
 const Table = () => {
@@ -172,24 +145,24 @@ const Table = () => {
                                 </div>
                             </div>
                             <div className="card-body">
-                                <table className="table table-bordered text-center">
+                                <div className="table table-bordered text-center">
                                     {/* <img src={c1} className='img-fluid' alt='' ></img> */}
                                     {/* <Doughnut
                                         data={data}
                                     /> */}
-                                     <div className="app">
-                                <div className="row">
-                                    <div className="mixed-chart">
-                                        <Chart
-                                            options={options3}
-                                            series={options3.series}
-                                            type="donut"
-                                            height={options3.chart.width}
-                                        />
+                                    <div className="app">
+                                        <div className="row">
+                                            <div className="mixed-chart">
+                                                <Chart
+                                                    options={options3}
+                                                    series={options3.series}
+                                                    type="donut"
+                                                    height={options3.chart.width}
+                                                />
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                                </table>
                             </div>
                         </div>
                     </div>
@@ -207,20 +180,20 @@ const Table = () => {
                                 </div>
                             </div>
                             <div className="card-body">
-                                <table className="table table-bordered text-center">
-                                <div className="app">
-                                <div className="row">
-                                    <div className="mixed-chart">
-                                        <Chart
-                                            options={options}
-                                            series={options.series}
-                                            type="bar"
-                                            height={options.chart.height}
-                                        />
+                                <div className="table table-bordered text-center">
+                                    <div className="app">
+                                        <div className="row">
+                                            <div className="mixed-chart">
+                                                <Chart
+                                                    options={options}
+                                                    series={options.series}
+                                                    type="bar"
+                                                    height={options.chart.height}
+                                                />
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                                </table>
                             </div>
                         </div>
                     </div>
@@ -241,7 +214,7 @@ const Table = () => {
                             </div>
                             <div className="card-body">
                                 <table className="table" style={{ marginTop: "-15px" }}>
-                                    <table class="table">
+                                    
                                         <thead >
                                             <tr >
 
@@ -306,7 +279,7 @@ const Table = () => {
                                                 <td style={{ textAlign: "center", paddingTop: "20px", fontSize: "0.8em" }}>15 july, 2023 | 05:22 PM</td>
                                             </tr>
                                         </tbody>
-                                    </table>
+                                    
                                 </table>
                             </div>
                         </div>
@@ -326,7 +299,7 @@ const Table = () => {
                             </div>
                             <div className="card-body">
                                 <table className="table" style={{ marginTop: "-15px" }}>
-                                    <table class="table">
+                                  
                                         <thead >
                                             <tr >
 
@@ -391,7 +364,7 @@ const Table = () => {
                                                 <td style={{ textAlign: "center", paddingTop: "20px", fontSize: "0.8em" }}>15 july, 2023 | 05:22 PM</td>
                                             </tr>
                                         </tbody>
-                                    </table>
+                                   
                                 </table>
                             </div>
                         </div>

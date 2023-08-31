@@ -1,5 +1,5 @@
 import React from 'react'
-import { Badge, Button, Col, Form, Row } from 'react-bootstrap'
+import {  Button, Col, Form, Row } from 'react-bootstrap'
 import filter from "../Components/Assets/Icons/filter.png"
 import Pic from "../Components/Assets/Icons/pic.png"
 import Pic2 from "../Components/Assets/Icons/Group 415.png"
@@ -12,21 +12,12 @@ import no4 from '../Components/Assets/Icons/flat.png'
 import no5 from '../Components/Assets/Icons/surface1.png'
 
 
-
-
-
-
-
-
-
-
-
 const SinglePatientDetail = () => {
     return (
         <>
             <div className="container-fluid p-3 p-md-5" style={{ marginTop: "30px" }}>
                 <div className='d-flex justify-content-end'>
-                    <Form inline>
+                    <Form >
                         <Row>
                             <Col xs="auto">
                                 <Form.Control
@@ -54,7 +45,7 @@ const SinglePatientDetail = () => {
                     <div className="col-12 col-md-5">
                         <div className='d-flex'>
                             <h2 className='ms-3 fw-bold mt-2'>Cive Slauw</h2>
-                            <p className='pt-1'><span class="badge bg-success p-2 mt-2 ms-3">APPROVED</span></p>
+                            <p className='pt-1'><span className="badge bg-success p-2 mt-2 ms-3">APPROVED</span></p>
                             <div className='d-block d-md-none'>
                                 <img src={Pic1} className='mt-2 me-2 ' alt=''></img>
                                 <img src={Pic2} className='mt-2 me-2' alt=''></img>
@@ -120,7 +111,7 @@ const SinglePatientDetail = () => {
                             <tr>
                                 <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>
                                     <input className="form-check-input me-3 p-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1" for="invalidCheck" >
+                                    <label className="form-check-label mt-1" htmlFor="invalidCheck" >
                                         Deposit Name
                                     </label></th>
                                 <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Transaction/Deposits</th>
@@ -136,7 +127,7 @@ const SinglePatientDetail = () => {
 
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         John Richards
                                     </label>
                                 </th>
@@ -150,7 +141,7 @@ const SinglePatientDetail = () => {
                             </tr>
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         John Richards
                                     </label>
                                 </th>
@@ -164,7 +155,7 @@ const SinglePatientDetail = () => {
                             </tr>
                             <tr style={{ fontSize: "0.9em", }}>
                                 <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                    <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                    <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                         John Richards
                                     </label>
                                 </th>

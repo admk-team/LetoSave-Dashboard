@@ -14,7 +14,7 @@ const ServiceManagmentPage = () => {
         <>
             <div className="container-fluid " style={{ marginTop: "80px" }}>
                 <div className='d-flex justify-content-end'>
-                    <Form inline>
+                    <Form >
                         <Row>
                             <Col xs="auto">
                                 <Link to="/AddServicemanagement" >
@@ -28,12 +28,12 @@ const ServiceManagmentPage = () => {
                 </div>
                 <div className='mt-3'>
                     <div className='table-responsive'>
-                        <table class="table table-hover text-center">
+                        <table className="table table-hover text-center">
                             <thead>
                                 <tr>
                                     <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>
                                         <input className="form-check-input me-1 p-2" type="checkbox" value="" id="invalidCheck" required />
-                                        <label className="form-check-label mt-1" for="invalidCheck" >
+                                        <label className="form-check-label mt-1" htmlFor="invalidCheck" >
                                             Service Name
                                         </label></th>
                                     <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Ward Type</th>
@@ -50,7 +50,7 @@ const ServiceManagmentPage = () => {
                             <tbody>
                                 <tr style={{ fontSize: "0.9em", }}>
                                     <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                        <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                        <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                             Delivery
                                         </label>
                                     </th>
@@ -68,7 +68,7 @@ const ServiceManagmentPage = () => {
                                 </tr>
                                 <tr style={{ fontSize: "0.9em", }}>
                                     <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                        <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                        <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                             Delivery
                                         </label>
                                     </th>
@@ -86,7 +86,7 @@ const ServiceManagmentPage = () => {
                                 </tr>
                                 <tr style={{ fontSize: "0.9em", }}>
                                     <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                        <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                        <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                             Delivery
                                         </label>
                                     </th>
@@ -104,7 +104,7 @@ const ServiceManagmentPage = () => {
                                 </tr>
                                 <tr style={{ fontSize: "0.9em", }}>
                                     <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                        <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                        <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                             Delivery
                                         </label>
                                     </th>
@@ -122,7 +122,7 @@ const ServiceManagmentPage = () => {
                                 </tr>
                                 <tr style={{ fontSize: "0.9em", }}>
                                     <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                        <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                        <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                             Delivery
                                         </label>
                                     </th>
@@ -140,7 +140,7 @@ const ServiceManagmentPage = () => {
                                 </tr>
                                 <tr style={{ fontSize: "0.9em", }}>
                                     <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                        <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                        <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                             Delivery
                                         </label>
                                     </th>
@@ -158,7 +158,7 @@ const ServiceManagmentPage = () => {
                                 </tr>
                                 <tr style={{ fontSize: "0.9em", }}>
                                     <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                        <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                        <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                             Delivery
                                         </label>
                                     </th>
@@ -176,7 +176,7 @@ const ServiceManagmentPage = () => {
                                 </tr>
                                 <tr style={{ fontSize: "0.9em", }}>
                                     <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                        <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                        <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                             Delivery
                                         </label>
                                     </th>
@@ -194,7 +194,7 @@ const ServiceManagmentPage = () => {
                                 </tr>
                                 <tr style={{ fontSize: "0.9em", }}>
                                     <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                        <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                        <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                             Delivery
                                         </label>
                                     </th>
@@ -212,7 +212,7 @@ const ServiceManagmentPage = () => {
                                 </tr>
                                 <tr style={{ fontSize: "0.9em", }}>
                                     <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                        <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                        <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                             Delivery
                                         </label>
                                     </th>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import no1 from "../Components/Images/302.png"
 import no2 from "../Components/Images/303.png"
-
 import Button from 'react-bootstrap/Button';
 import filter from "../Components/Assets/Icons/filter.png"
 import bank from "../Components/Images/bank.png"
@@ -9,9 +8,6 @@ import im from "../Components/Images/wallet.png"
 import im1 from "../Components/Images/layer1.png"
 import { Link } from 'react-router-dom';
 import WithdrawModal from './WithdrawModal';
-
-
-
 
 
 
@@ -91,19 +87,19 @@ const NavigationAndContent = () => {
                             </div>
                             <form>
                                 <div className="row mt-4 border-bottom pb-4">
-                                    <label for="inputPassword3" className="col-sm-2 col-form-label mt-1">Current Password</label>
+                                    <label htmlFor="inputPassword3" className="col-sm-2 col-form-label mt-1">Current Password</label>
                                     <div className="col-sm-6">
                                         <input type="password" className="form-control" id="inputPassword3" />
                                     </div>
                                 </div>
                                 <div className="row mt-4 ">
-                                    <label for="inputPassword3" className="col-sm-2 col-form-label mt-1">New Password</label>
+                                    <label htmlFor="inputPassword3" className="col-sm-2 col-form-label mt-1">New Password</label>
                                     <div className="col-sm-6">
                                         <input type="password" className="form-control" id="inputPassword3" />
                                     </div>
                                 </div>
                                 <div className="row mt-4 ">
-                                    <label for="inputPassword3" className="col-sm-2 col-form-label mt-1">Confirm Password</label>
+                                    <label htmlFor="inputPassword3" className="col-sm-2 col-form-label mt-1">Confirm Password</label>
                                     <div className="col-sm-6">
                                         <input type="password" className="form-control" id="inputPassword3" />
                                     </div>
@@ -146,12 +142,12 @@ const NavigationAndContent = () => {
                                 </div>
                             </div>
                             <div className='table-responsive'>
-                                <table class="table table-hover mt-4">
+                                <table className="table table-hover mt-4">
                                     <thead>
                                         <tr>
                                             <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>
                                                 <input className="form-check-input me-3 p-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1" for="invalidCheck" >
+                                                <label className="form-check-label mt-1" htmlFor="invalidCheck" >
                                                     Bank
                                                 </label></th>
                                             <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.8em", color: "#064FB8" }}>Account Name</th>
@@ -164,7 +160,7 @@ const NavigationAndContent = () => {
                                     <tbody>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     DFCU Bank
                                                 </label>
                                             </th>
@@ -176,7 +172,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     DFCU Bank
                                                 </label>
                                             </th>
@@ -188,7 +184,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     DFCU Bank
                                                 </label>
                                             </th>
@@ -200,7 +196,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     DFCU Bank
                                                 </label>
                                             </th>
@@ -212,7 +208,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     DFCU Bank
                                                 </label>
                                             </th>
@@ -224,7 +220,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     DFCU Bank
                                                 </label>
                                             </th>
@@ -236,7 +232,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     DFCU Bank
                                                 </label>
                                             </th>
@@ -248,7 +244,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     DFCU Bank
                                                 </label>
                                             </th>
@@ -260,7 +256,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     DFCU Bank
                                                 </label>
                                             </th>
@@ -272,7 +268,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     DFCU Bank
                                                 </label>
                                             </th>
@@ -284,7 +280,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     DFCU Bank
                                                 </label>
                                             </th>
@@ -296,7 +292,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     DFCU Bank
                                                 </label>
                                             </th>
@@ -356,12 +352,12 @@ const NavigationAndContent = () => {
                             </div>
                             <h4 className='fw-semibold mt-3'>All Transactions</h4>
                             <div className='table-responsive'>
-                                <table class="table table-hover mt-2 ">
+                                <table className="table table-hover mt-2 ">
                                     <thead>
                                         <tr>
                                             <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>
                                                 <input className="form-check-input me-3 p-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1" for="invalidCheck" >
+                                                <label className="form-check-label mt-1" htmlFor="invalidCheck" >
                                                     Bank Account
                                                 </label></th>
                                             <th scope="col" style={{ backgroundColor: "#EFF5FF", fontSize: "0.7em", color: "#064FB8" }}>Tranx Date</th>
@@ -375,7 +371,7 @@ const NavigationAndContent = () => {
 
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     038343546453
                                                 </label>
                                             </th>
@@ -388,7 +384,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     038343546453
                                                 </label>
                                             </th>
@@ -401,7 +397,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     038343546453
                                                 </label>
                                             </th>
@@ -414,7 +410,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     038343546453
                                                 </label>
                                             </th>
@@ -427,7 +423,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     038343546453
                                                 </label>
                                             </th>
@@ -440,7 +436,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     038343546453
                                                 </label>
                                             </th>
@@ -453,7 +449,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     038343546453
                                                 </label>
                                             </th>
@@ -466,7 +462,7 @@ const NavigationAndContent = () => {
                                         </tr>
                                         <tr style={{ fontSize: "0.9em", }}>
                                             <th scope="row"><input className="form-check-input me-3 p-2 mt-2" type="checkbox" value="" id="invalidCheck" required />
-                                                <label className="form-check-label mt-1 fw-normal mt-2" for="invalidCheck" style={{ fontSize: '200' }}>
+                                                <label className="form-check-label mt-1 fw-normal mt-2" htmlFor="invalidCheck" style={{ fontSize: '200' }}>
                                                     038343546453
                                                 </label>
                                             </th>

@@ -1,17 +1,13 @@
 import React from 'react'
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import filter from "../Components/Assets/Icons/filter.png"
 import Message from "../Components/Images/mess.png"
 import cros from "../Components/Images/cros.png"
-
 import Tik from "../Components/Assets/Icons/Group 415.png"
 import { Link } from 'react-router-dom';
-
-
 
 
 const PatientManagementPage = () => {
@@ -20,7 +16,7 @@ const PatientManagementPage = () => {
         <>
             <div className="container-fluid " style={{ marginTop: "55px" }}>
                 <div className='d-flex justify-content-end'>
-                    <Form inline>
+                    <Form >
                         <Row>
                             <Col xs="auto">
                                 <Form.Control
@@ -319,8 +315,8 @@ const PatientManagementPage = () => {
 
                                         </img></td>
                                 </tr>
-                               
-                             
+
+
 
                             </tbody>
                         </table>

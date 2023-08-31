@@ -8,9 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-
 import ListItemText from '@mui/material/ListItemText';
-
 import MailIcon from '@mui/icons-material/Mail';
 import Boxes from "../Components/Dashboardhome/Boxes"
 import { Avatar, Badge, Divider, Stack } from '@mui/material';
@@ -24,19 +22,14 @@ import Layer from "../Components/Assets/Icons/Layer_x0020_1.png"
 import report from "../Components/Assets/Icons/report.png"
 import logout from "../Components/Assets/Icons/logout.png"
 import Table from "../Components/Dashboardhome/Table"
-
 import { Link } from 'react-router-dom';
 import LogoutModal from '../Components/LogoutModal';
 
 
 
 const drawerWidth = 280;
-
-
 const PersistentDrawerLeft = () => {
     const [showLogoutModal, setShowLogoutModal] = useState(false);
-
-
     const [open, setOpen] = useState(window.innerWidth >= 1026);
     useEffect(() => {
         const handleResize = () => {
