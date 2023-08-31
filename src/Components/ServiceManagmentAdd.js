@@ -6,7 +6,7 @@ import Form from 'react-bootstrap/Form';
 const ServiceManagmentAdd = () => {
     return (
         <>
-            <div className="container " style={{ marginTop: "50px" }}>
+            <div className="container " style={{ marginTop: "80px" }}>
                 <Form style={{ maxWidth: "600px", margin: "0 auto" }}>
                     <Form.Group className="mb-4" >
                         <Form.Label>Service Name</Form.Label>
