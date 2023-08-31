@@ -196,7 +196,7 @@ const PatientReportComponent = () => {
             enabled: false
         },
         responsive: [{
-            breakpoint: 430,
+            breakpoint: 780,
             options: {
                 chart: {
                     height: 600,
@@ -213,7 +213,7 @@ const PatientReportComponent = () => {
         }],
         legend: {
             position: 'right',
-            offsetY: 0,
+            offsetY: 70,
             height: 130,
         }
     };
