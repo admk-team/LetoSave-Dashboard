@@ -7,6 +7,8 @@ import Form from 'react-bootstrap/Form';
 import "../App.css"
 import Upload from "../Components/Images/upload.png"
 import OTPModal from '../Components/OTPModal';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
 
 
 
@@ -30,6 +32,11 @@ const RegistrationPage = () => {
 
     return (
         <>
+        <HelmetProvider>
+                <Helmet>
+                    <title>LetoSave | Registration-page</title>
+                </Helmet>
+            </HelmetProvider>
             <Container className="d-flex justify-content-center align-items-center  ">
 
                 <div className="container ">

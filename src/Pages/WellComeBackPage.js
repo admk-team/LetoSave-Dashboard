@@ -2,14 +2,20 @@ import React from 'react'
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Imag from "../Components/Images/logo.png";
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
 
 
 const WellComeBackPage = () => {
     return (
         <>
+            <HelmetProvider>
+                <Helmet>
+                    <title>LetoSave | Welcome-back</title>
+                </Helmet>
+            </HelmetProvider>
             <Container className="d-flex justify-content-center align-items-center  " style={{ marginTop: "70px" }}>
 
                 <div className="container ">
@@ -53,8 +59,8 @@ const WellComeBackPage = () => {
 
                                             </div>
                                             <div className="d-grid gap-2 mt-4">
-                                                <Link to='/' className='text-decoration-none text-center  text-white rounded p-3 fw-semibold' style={{backgroundColor:'#064FB8'}}>
-                                                        Login
+                                                <Link to='/' className='text-decoration-none text-center  text-white rounded p-3 fw-semibold' style={{ backgroundColor: '#064FB8' }}>
+                                                    Login
                                                 </Link>
                                             </div>
 

@@ -25,6 +25,8 @@ import logout from "../Components/Assets/Icons/logout.png"
 import { Link } from 'react-router-dom';
 import LogoutModal from '../Components/LogoutModal';
 import SinglePatientDetail from '../Components/SinglePatientDetail';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
 
 
 const drawerWidth = 280;
@@ -63,7 +65,12 @@ const SinglePageDetailPagessss = () => {
     return (
         <>
 
-            return (
+
+            <HelmetProvider>
+                <Helmet>
+                    <title>LetoSave | Patient-Detail</title>
+                </Helmet>
+            </HelmetProvider>
             <div style={{ display: 'contents' }}>
                 <CssBaseline />
                 <AppBar position="fixed" sx={{ marginLeft: open ? drawerWidth : 0, width: `calc(100% - ${open ? drawerWidth : 0}px)` }} style={{ backgroundColor: "white", color: "black", boxShadow: "none" }}>
@@ -122,12 +129,14 @@ const SinglePageDetailPagessss = () => {
                     }}
 
                 >
-                    <div className='d-flex justify-content-center' style={{ backgroundColor: "#0749A8", paddingTop: "13px" }}>
-                        <img src={Logo} alt='' style={{ width: '35px', height: "35px" }}></img>
-                        <h1 className='fw-bold ms-2' style={{ fontSize: "1.8em", color: "white", letterSpacing: '3px' }}>
-                            LetoSave
-                        </h1>
-                    </div>
+                    <Link className="nav-link" to="/">
+                        <div className='d-flex justify-content-center' style={{ backgroundColor: "#0749A8", paddingTop: "13px" }}>
+                            <img src={Logo} alt='' style={{ width: '35px', height: "35px" }}></img>
+                            <h1 className='fw-bold ms-2' style={{ fontSize: "1.8em", color: "white", letterSpacing: '3px' }}>
+                                LetoSave
+                            </h1>
+                        </div>
+                    </Link>
                     <Divider />
                     <List >
                         {/* {['Dashboard', 'Patient Management', 'Deposits Management', 'Service Management', 'Support / Chart', 'Reports', 'Logout'].map((text, index) => ( */}

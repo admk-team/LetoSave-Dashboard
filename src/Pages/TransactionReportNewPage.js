@@ -26,11 +26,13 @@ import logout from "../Components/Assets/Icons/logout.png"
 import { Link } from 'react-router-dom';
 import TransactionReportComponent from '../Components/TransactionReportComponent';
 import LogoutModal from '../Components/LogoutModal';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
 
 
 const drawerWidth = 280;
 const TransactionReportNewPage = () => {
-    
+
     const [showLogoutModal, setShowLogoutModal] = useState(false);
 
     const [open, setOpen] = useState(window.innerWidth >= 960);
@@ -66,7 +68,11 @@ const TransactionReportNewPage = () => {
     return (
         <>
 
-            return (
+            <HelmetProvider>
+                <Helmet>
+                    <title>LetoSave | Transaction-report</title>
+                </Helmet>
+            </HelmetProvider>
             <div style={{ display: 'contents' }}>
                 <CssBaseline />
                 <AppBar position="fixed" sx={{ marginLeft: open ? drawerWidth : 0, width: `calc(100% - ${open ? drawerWidth : 0}px)` }} style={{ backgroundColor: "white", color: "black", boxShadow: "none" }}>
@@ -83,15 +89,15 @@ const TransactionReportNewPage = () => {
                         </IconButton>
 
                         <Typography variant="h6" noWrap component="div" className='d-none d-lg-block'>
-                        Transaction Report
-                    </Typography>
+                            Transaction Report
+                        </Typography>
 
 
                         <Stack spacing={4} direction="row" sx={{ color: 'action.active', marginLeft: 'auto' }}>
-                        <Link className="nav-link" to="/Support/Chart-Management">
-                            <Badge color="secondary" badgeContent={0}>
-                                <MailIcon sx={{ fontSize: 23, color: '#FF7070' }} style={{ marginTop: "10px" }} />
-                            </Badge>
+                            <Link className="nav-link" to="/Support/Chart-Management">
+                                <Badge color="secondary" badgeContent={0}>
+                                    <MailIcon sx={{ fontSize: 23, color: '#FF7070' }} style={{ marginTop: "10px" }} />
+                                </Badge>
                             </Link>
                             <Link to="/Notification" >
                                 <Badge color="secondary" showZero>
@@ -125,12 +131,14 @@ const TransactionReportNewPage = () => {
                     }}
 
                 >
-                    <div className='d-flex justify-content-center' style={{ backgroundColor: "#0749A8", paddingTop: "13px" }}>
-                        <img src={Logo} alt='' style={{ width: '35px', height: "35px" }}></img>
-                        <h1 className='fw-bold ms-2' style={{ fontSize: "1.8em", color: "white", letterSpacing: '3px' }}>
-                            LetoSave
-                        </h1>
-                    </div>
+                    <Link className="nav-link" to="/">
+                        <div className='d-flex justify-content-center' style={{ backgroundColor: "#0749A8", paddingTop: "13px" }}>
+                            <img src={Logo} alt='' style={{ width: '35px', height: "35px" }}></img>
+                            <h1 className='fw-bold ms-2' style={{ fontSize: "1.8em", color: "white", letterSpacing: '3px' }}>
+                                LetoSave
+                            </h1>
+                        </div>
+                    </Link>
                     <Divider />
                     <List >
                         {/* {['Dashboard', 'Patient Management', 'Deposits Management', 'Service Management', 'Support / Chart', 'Reports', 'Logout'].map((text, index) => ( */}
@@ -156,27 +164,27 @@ const TransactionReportNewPage = () => {
                         <ListItem>
                             <img src={Customer} className='me-3' alt=''></img>
                             <Link className="nav-link" to="/service-Management">
-                            <ListItemText primary='Service Management' />
+                                <ListItemText primary='Service Management' />
                             </Link>
                         </ListItem>
                         <ListItem>
                             <img src={Layer} className='me-3' alt=''></img>
                             <Link className="nav-link" to="/Support/Chart-Management">
-                            <ListItemText primary='Support / Chart' />
+                                <ListItemText primary='Support / Chart' />
                             </Link>
                         </ListItem>
                         <ListItem>
                             <img src={report} className='me-3' alt=''></img>
                             <Link className="nav-link" to="/Reports-Management">
-                            <ListItemText primary='Reports' />
+                                <ListItemText primary='Reports' />
                             </Link>
                         </ListItem>
                         <ListItem className='cursor-pointer'>
-                        <img src={logout} className='me-3' alt=''></img>
-                        
-                            <ListItemText primary='Logout'  onClick={handleLogoutClick} />
-                       
-                    </ListItem>
+                            <img src={logout} className='me-3' alt=''></img>
+
+                            <ListItemText primary='Logout' onClick={handleLogoutClick} />
+
+                        </ListItem>
                         {/* ))} */}
 
                     </List>
@@ -186,9 +194,9 @@ const TransactionReportNewPage = () => {
 
                 <main style={{ flexGrow: 1, marginLeft: open ? drawerWidth : 0, backgroundColor: 'wheate' }}>
 
-                    <TransactionReportComponent/>
-                    <LogoutModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm}/>
-                   
+                    <TransactionReportComponent />
+                    <LogoutModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm} />
+
                 </main>
             </div>
         </>

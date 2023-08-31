@@ -2,14 +2,19 @@ import React from 'react'
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Imag from "../Components/Images/logo.png";
-import Button from 'react-bootstrap/Button';
-
 import Back from "../Components/Images/arrow.png";
 import { Link } from 'react-router-dom';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
 
 const ForgotPasswordPage = () => {
     return (
         <>
+            <HelmetProvider>
+                <Helmet>
+                    <title>LetoSave | forgot-password</title>
+                </Helmet>
+            </HelmetProvider>
             <Container className="d-flex justify-content-center align-items-center" style={{ marginTop: "90px" }}>
 
                 <div className="container ">
@@ -34,13 +39,13 @@ const ForgotPasswordPage = () => {
 
                                             </div>
                                             <div className="d-grid gap-2 mt-4">
-                                                <Link to="/Reset-Password" className='text-decoration-none text-center  text-white rounded p-3 fw-semibold' style={{backgroundColor:'#064FB8'}} >
-        
-                                                        Reset Password
-                                                   
+                                                <Link to="/Reset-Password" className='text-decoration-none text-center  text-white rounded p-3 fw-semibold' style={{ backgroundColor: '#064FB8' }} >
+
+                                                    Reset Password
+
                                                 </Link>
                                             </div>
-                                            <div className=" mt-4 rounded d-flex justify-content-center border border-black" style={{padding:'12px'}}>
+                                            <div className=" mt-4 rounded d-flex justify-content-center border border-black" style={{ padding: '12px' }}>
                                                 <Link to='/Welcome-back' size="lg" className='text-decoration-none text-dark'>
                                                     <img src={Back} alt='Back' style={{ width: "20px", height: "20px" }}></img>  Back to log in
                                                 </Link>
