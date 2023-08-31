@@ -90,7 +90,7 @@ const RevenueReportComponent = () => {
       }
     },
     series: [30, 15, 30, 40],
-    labels: ['Ward Type', 'Private Room - c-section', 'VIP - Normal', 'Delivery'],
+    labels: ['Ward Type', 'Private Room', 'VIP - Normal', 'Delivery'],
     chart: {
       width: 365, // Adjust the width to make it smaller
       type: 'donut',
@@ -100,11 +100,11 @@ const RevenueReportComponent = () => {
       enabled: false
     },
     responsive: [{
-      breakpoint: 430,
+      breakpoint: 780,
       options: {
         chart: {
-          width: "100%" ,// Adjust the width for smaller screens
-          height:500
+          width: "100%",// Adjust the width for smaller screens
+          height: 500
         },
         legend: {
           position: 'bottom',
@@ -115,7 +115,7 @@ const RevenueReportComponent = () => {
     }],
     legend: {
       position: 'right',
-      offsetY: 0,
+      offsetY: 70,
       height: 130,
     }
   };
@@ -142,7 +142,7 @@ const RevenueReportComponent = () => {
               fontSize: '1.5rem',
               offsetY: 16,
               color: '#494949',
-             
+
             }
           }
         }
@@ -159,11 +159,11 @@ const RevenueReportComponent = () => {
       enabled: false
     },
     responsive: [{
-      breakpoint: 430,
+      breakpoint: 780,
       options: {
         chart: {
           width: "100%",// Adjust the width for smaller screens
-          height:500
+          height: 500
         },
         legend: {
           position: 'bottom',
@@ -172,7 +172,12 @@ const RevenueReportComponent = () => {
         },
       }
     }],
-   
+    legend: {
+      position: 'right',
+      offsetY: 90,
+      height: 130,
+    }
+
   };
   const option5 = {
     series: [{

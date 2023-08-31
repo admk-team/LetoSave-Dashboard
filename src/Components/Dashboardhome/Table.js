@@ -97,7 +97,7 @@ const options3 = {
         enabled: false
     },
     responsive: [{
-        breakpoint: 480,
+        breakpoint: 780,
         options: {
             chart: {
                 width: "100%", // Adjust the width for smaller screens
@@ -121,7 +121,7 @@ const options3 = {
     }],
     legend: {
         position: 'right',
-        offsetY: 0,
+        offsetY: 70,
         height: 130,
 
     }
