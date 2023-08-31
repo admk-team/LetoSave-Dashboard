@@ -113,7 +113,7 @@ const TransactionReportComponent = () => {
         }],
         legend: {
             position: 'right',
-            offsetY: 0,
+            offsetY: 70,
             height: 130,
         }
     };
@@ -171,7 +171,7 @@ const TransactionReportComponent = () => {
         }],
         legend: {
             position: 'right',
-            offsetY: 0,
+            offsetY: 100,
             height: 130,
         }
     };
