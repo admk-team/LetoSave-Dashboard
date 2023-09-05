@@ -16,7 +16,7 @@ const SinglePatientDetail = () => {
     return (
         <>
             <div className="container-fluid p-3 p-md-5" style={{ marginTop: "30px" }}>
-                <div className='d-flex justify-content-end'>
+                <div className='d-flex justify-content-end mt-3 mt-md-0'>
                     <Form >
                         <Row>
                             <Col xs="auto">
@@ -167,8 +167,6 @@ const SinglePatientDetail = () => {
                                 <td ><span className="badge text-bg-warning p-2 me-2 mt-2 ">PENDING</span> </td>
                                 <td className='pt-3'>26/02/2023 | 12:42 PM</td>
                             </tr>
-
-
                         </tbody>
                     </table>
                 </div>
