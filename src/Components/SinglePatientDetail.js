@@ -42,11 +42,11 @@ const SinglePatientDetail = () => {
                         <img src={Pic} style={{ width: '170px', height: '170px' }} alt=''></img>
                     </div>
 
-                    <div className="col-12 col-xl-5">
+                    <div className="col-12 col-md-5">
                         <div className='d-flex'>
                             <h2 className='ms-3 fw-bold mt-2'>Cive Slauw</h2>
                             <p className='pt-1'><span className="badge bg-success p-2 mt-2 ms-3">APPROVED</span></p>
-                            <div className='d-block d-xl-none'>
+                            <div className='d-block d-md-none'>
                                 <img src={Pic1} className='mt-2 me-2 ' alt=''></img>
                                 <img src={Pic2} className='mt-2 me-2' alt=''></img>
                                 <img src={Pic3} className='mt-2' alt=''></img>
@@ -74,8 +74,8 @@ const SinglePatientDetail = () => {
                             <h5 className='dateof fw-semibold' style={{ marginLeft: '52px' }}>15 March, 2024</h5>
                         </div>
                     </div>
-                    <div className="col-12 col-xl-5 ">
-                        <div className='d-none d-xl-block'>
+                    <div className="col-12 col-md-5 ">
+                        <div className='d-none d-md-block'>
                             <img src={Pic1} className='mt-2 pt-1 me-2 ps-5 ms-5' alt=''></img>
                             <img src={Pic2} className='mt-2 me-2' alt=''></img>
                             <img src={Pic3} className='mt-2' alt=''></img>
