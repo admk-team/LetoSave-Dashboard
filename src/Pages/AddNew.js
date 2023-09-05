@@ -35,10 +35,10 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 const drawerWidth = 280;
 const AddNew = () => {
     const [showLogoutModal, setShowLogoutModal] = useState(false);
-    const [open, setOpen] = useState(window.innerWidth >= 960);
+    const [open, setOpen] = useState(window.innerWidth >= 1026);
     useEffect(() => {
         const handleResize = () => {
-            setOpen(window.innerWidth >= 960);
+            setOpen(window.innerWidth >= 1026);
         };
         window.addEventListener('resize', handleResize);
         return () => {

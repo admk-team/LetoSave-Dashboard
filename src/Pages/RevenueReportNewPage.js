@@ -35,13 +35,13 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 const drawerWidth = 280;
 const RevenueReportNewPage = () => {
     const [showLogoutModal, setShowLogoutModal] = useState(false);
-    const [open, setOpen] = useState(window.innerWidth >= 960);
+    const [open, setOpen] = useState(window.innerWidth >= 1026);
     useEffect(() => {
         document.title = "Revenue Page";
     }, [])
     useEffect(() => {
         const handleResize = () => {
-            setOpen(window.innerWidth >= 960);
+            setOpen(window.innerWidth >= 1026);
         };
         window.addEventListener('resize', handleResize);
         return () => {

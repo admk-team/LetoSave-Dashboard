@@ -167,8 +167,8 @@ const PatientReportComponent = () => {
                             show: true,
                             showAlways: true,
                             label: 'Total Service',
-                            fontWeight: 600,
-                            fontSize: '1.1rem',
+                            fontWeight: 400,
+                            fontSize: '1rem',
                             color: '#898989',
                             formatter: function () {
                                 return 785;
@@ -176,7 +176,7 @@ const PatientReportComponent = () => {
                         },
                         value: {
                             show: true,
-                            fontWeight: 600,
+                            fontWeight: 500,
                             fontSize: '3rem',
                             offsetY: 32,
                             color: '#494949'
@@ -188,6 +188,7 @@ const PatientReportComponent = () => {
         series: [30, 15, 30, 40],
         labels: ['Double Room - c-section', 'Private Room - c-section', 'VIP - Normal', 'Private Room - Normal'],
         chart: {
+           
             width: 365, // Adjust the width to make it smaller
             type: 'donut',
         },
@@ -196,16 +197,17 @@ const PatientReportComponent = () => {
             enabled: false
         },
         responsive: [{
-            breakpoint: 780,
+            breakpoint: 1025,
             options: {
                 chart: {
-                    height: 600,
+                    height: 400,
                     width: "100%", // Adjust the width for smaller screens
                 },
                 legend: {
                     position: 'bottom',
                     offsetY: 0,
                     height: 130,
+                   
                 },
                
 
@@ -214,7 +216,8 @@ const PatientReportComponent = () => {
         legend: {
             position: 'right',
             offsetY: 70,
-            height: 130,
+            height: "100%",
+            
         }
     };
 

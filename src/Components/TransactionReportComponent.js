@@ -91,18 +91,18 @@ const TransactionReportComponent = () => {
         chart: {
             width: 365, // Adjust the width to make it smaller
             type: 'donut',
-            height: 900,
+          
         },
         colors: ['#064FB8', '#F7282F', '#06B871', '#C5DAF8'], // Green, Red, Blue
         dataLabels: {
             enabled: false
         },
         responsive: [{
-            breakpoint: 430,
+            breakpoint: 1025,
             options: {
                 chart: {
                     width: "100%",// Adjust the width for smaller screens
-                    height: 500
+                    height: 400
                 },
                 legend: {
                     position: 'bottom',
@@ -156,11 +156,11 @@ const TransactionReportComponent = () => {
             enabled: false
         },
         responsive: [{
-            breakpoint: 430,
+            breakpoint: 1025,
             options: {
                 chart: {
                     width: "100%",// Adjust the width for smaller screens
-                    height: 500
+                    height: 400
                 },
                 legend: {
                     position: 'bottom',

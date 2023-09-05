@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Imag from "../Components/Images/logo.png";
@@ -32,7 +32,7 @@ const RegistrationPage = () => {
 
     return (
         <>
-        <HelmetProvider>
+            <HelmetProvider>
                 <Helmet>
                     <title>LetoSave | Registration-page</title>
                 </Helmet>
@@ -70,8 +70,8 @@ const RegistrationPage = () => {
 
                                             <div className="row">
                                                 <div className="col-md-6 mb-4">
-                                                   
-                                                <Form.Select size="lg">
+
+                                                    <Form.Select size="lg">
                                                         <option>District</option>
                                                         <option value="2">Option 1</option>
                                                         <option value="3">Option 2</option>
@@ -143,7 +143,7 @@ const RegistrationPage = () => {
                                                 <Button variant="primary" size="lg" onClick={handleLogoutClick}>
                                                     Register Now
                                                 </Button>
-                                                <OTPModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm}/>
+                                                <OTPModal show={showLogoutModal} onClose={handleLogoutClose} onLogout={handleLogoutConfirm} />
                                             </div>
                                         </div>
                                     </div>

@@ -100,11 +100,11 @@ const RevenueReportComponent = () => {
       enabled: false
     },
     responsive: [{
-      breakpoint: 780,
+      breakpoint: 1025,
       options: {
         chart: {
           width: "100%",// Adjust the width for smaller screens
-          height: 500
+          height: 400
         },
         legend: {
           position: 'bottom',
@@ -159,11 +159,11 @@ const RevenueReportComponent = () => {
       enabled: false
     },
     responsive: [{
-      breakpoint: 780,
+      breakpoint: 1025,
       options: {
         chart: {
           width: "100%",// Adjust the width for smaller screens
-          height: 500
+          height: 400
         },
         legend: {
           position: 'bottom',

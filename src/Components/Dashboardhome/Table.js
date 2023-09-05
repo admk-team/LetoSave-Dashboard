@@ -224,7 +224,7 @@ const Table = () => {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
+                                            <tr >
 
                                                 <td className='d-flex'>
                                                     <Avatar alt="Remy Sharp" className='' sx={{ width: 37, height: 37 }} src="/static/images/avatar/1.jpg" />
