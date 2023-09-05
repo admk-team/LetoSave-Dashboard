@@ -74,7 +74,7 @@ const SinglePatientDetail = () => {
                             <h5 className='dateof fw-semibold' style={{ marginLeft: '52px' }}>15 March, 2024</h5>
                         </div>
                     </div>
-                    <div className="col-12 col-md-5">
+                    <div className="col-12 col-xl-5 ">
                         <div className='d-none d-xl-block'>
                             <img src={Pic1} className='mt-2 pt-1 me-2 ps-5 ms-5' alt=''></img>
                             <img src={Pic2} className='mt-2 me-2' alt=''></img>
